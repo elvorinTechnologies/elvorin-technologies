@@ -1,4 +1,4 @@
-import "../styles/contactsec.css";
+import "../styles/contact.css";
 
 import { useRef } from "react";
 
