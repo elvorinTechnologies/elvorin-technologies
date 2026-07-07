@@ -1,0 +1,1585 @@
+/* ==========================================================
+        ELVORIN TECHNOLOGIES
+        WHY CHOOSE
+        PART 2.1
+========================================================== */
+
+:root{
+
+    --primary:#3B82F6;
+    --secondary:#2563EB;
+
+    --white:#ffffff;
+
+    --text:#AAB8CF;
+
+}
+
+/* ==========================================
+        SECTION
+========================================== */
+
+.elv-why{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:60px 0;
+
+    background:#050816;
+
+}
+
+/* ==========================================
+        BACKGROUND GLOW
+========================================== */
+
+.elv-why::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:900px;
+
+    height:900px;
+
+    left:50%;
+
+    top:-350px;
+
+    transform:translateX(-50%);
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(circle,
+
+    rgba(59,130,246,.18),
+
+    transparent 70%);
+
+    filter:blur(90px);
+
+    animation:GlowMove 8s ease-in-out infinite;
+
+}
+
+/* Grid */
+
+.elv-why::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:
+
+    linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+
+    linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+
+    background-size:70px 70px;
+
+    mask-image:
+
+    radial-gradient(circle,#fff 30%,transparent 100%);
+
+    opacity:.35;
+
+}
+
+/* ==========================================
+        CONTAINER
+========================================== */
+
+.elv-why-container{
+
+    width:90%;
+
+    max-width:1450px;
+
+    margin:auto;
+
+    position:relative;
+
+    z-index:5;
+
+}
+
+/* ==========================================
+        HEADING
+========================================== */
+
+.elv-why-heading{
+
+    max-width:760px;
+
+    margin:auto;
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.elv-why-heading span{
+
+    display:inline-flex;
+
+    padding:10px 22px;
+
+    border-radius:50px;
+
+    background:rgba(59,130,246,.10);
+
+    border:1px solid rgba(59,130,246,.20);
+
+    color:#7EB0FF;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:14px;
+
+    font-family:'inter',sans-serif;
+
+}
+
+.elv-why-heading h2{
+
+    color:#fff;
+
+    font-size:56px;
+
+    line-height:1.15;
+    
+    font-weight:700;
+
+    margin-bottom:22px;
+
+    font-family:'roboto',sans-serif;
+
+}
+
+.elv-why-heading p{
+
+    color:var(--text);
+
+    font-size:18px;
+
+    line-height:34px;
+    
+    font-family:'inter',sans-serif;     
+
+}
+
+/* ==========================================
+        SHOWCASE
+========================================== */
+
+.elv-showcase{
+
+    position:relative;
+
+    width:100%;
+
+    height:850px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/* ==========================================
+        GLOW
+========================================== */
+
+.elv-showcase-glow{
+
+    position:absolute;
+
+    width:650px;
+
+    height:650px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(circle,
+
+    rgba(59,130,246,.22),
+
+    transparent 70%);
+
+    filter:blur(80px);
+
+    animation:PulseGlow 6s ease-in-out infinite;
+
+}
+
+/* ==========================================
+        MACBOOK
+========================================== */
+
+.elv-macbook{
+
+    position:relative;
+
+    width:780px;
+
+    z-index:10;
+
+    animation:FloatMac 6s ease-in-out infinite;
+
+}
+
+.elv-macbook-frame{
+
+    width:100%;
+
+    display:block;
+
+    filter:
+
+    drop-shadow(0 40px 90px rgba(0,0,0,.45));
+
+    border-radius:20px;
+
+}
+
+/* ==========================================
+        SCREEN
+========================================== */
+
+.elv-screen{
+
+    position:absolute;
+
+    top:5.5%;
+
+    left:11.6%;
+
+    width:76.8%;
+
+    height:74%;
+
+    overflow:hidden;
+
+    border-radius:12px;
+
+}
+
+.elv-screen img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+/* ==========================================================
+        ELVORIN CTA BUTTON
+========================================================== */
+
+.elv-why-btn{
+
+    position:relative;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:12px;
+
+    padding:18px 34px;
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    border-radius:60px;
+
+    overflow:hidden;
+
+    background:
+    linear-gradient(
+        135deg,
+        #3B82F6,
+        #2563EB
+    );
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    letter-spacing:.4px;
+
+    transition:all .45s cubic-bezier(.22,1,.36,1);
+
+    box-shadow:
+    0 20px 45px rgba(37,99,235,.35);
+
+}
+
+/* Glow */
+
+.elv-why-btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-2px;
+
+    border-radius:60px;
+
+    padding:2px;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(255,255,255,.7),
+        transparent,
+        rgba(255,255,255,.4)
+    );
+
+    -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite:xor;
+
+    mask-composite:exclude;
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+/* Shine */
+
+.elv-why-btn::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:70%;
+
+    height:100%;
+
+    background:
+
+    linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.45),
+        transparent
+    );
+
+    transform:skewX(-25deg);
+
+    transition:.8s;
+
+}
+
+/* Hover */
+
+.elv-why-btn:hover{
+
+    transform:
+    translateY(-6px)
+    scale(1.03);
+
+    box-shadow:
+
+    0 30px 70px rgba(37,99,235,.45);
+
+}
+
+.elv-why-btn:hover::before{
+
+    opacity:1;
+
+}
+
+.elv-why-btn:hover::after{
+
+    left:150%;
+
+}
+
+/* Click */
+
+.elv-why-btn:active{
+
+    transform:scale(.97);
+
+}
+
+/* Icon */
+
+.elv-why-btn svg{
+
+    transition:.35s;
+
+}
+
+.elv-why-btn:hover svg{
+
+    transform:translateX(8px);
+
+}
+
+.elv-why-cta {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+/* ==========================================
+        ANIMATIONS
+========================================== */
+
+@keyframes FloatMac{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-14px);
+
+    }
+
+}
+
+@keyframes PulseGlow{
+
+    0%,100%{
+
+        transform:scale(1);
+
+        opacity:.9;
+
+    }
+
+    50%{
+
+        transform:scale(1.08);
+
+        opacity:1;
+
+    }
+
+}
+
+@keyframes GlowMove{
+
+    0%,100%{
+
+        transform:
+
+        translateX(-50%)
+
+        scale(1);
+
+    }
+
+    50%{
+
+        transform:
+
+        translateX(-50%)
+
+        scale(1.08);
+
+    }
+
+}
+
+/* ==========================================================
+        ELVORIN TECHNOLOGIES
+        WHY CHOOSE
+        PART 2.2
+========================================================== */
+
+/* ===========================
+        COMMON NODE
+=========================== */
+
+.elv-node{
+
+    position:absolute;
+
+    z-index:20;
+
+}
+
+.elv-node-card{
+
+    width:240px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    padding:18px;
+
+    border-radius:22px;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.10);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    box-shadow:
+
+    0 20px 60px rgba(0,0,0,.25);
+
+    transition:.45s cubic-bezier(.22,1,.36,1);
+
+}
+
+/* ===========================
+        ICON
+=========================== */
+
+.elv-node-icon{
+
+    width:58px;
+
+    height:58px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-shrink:0;
+
+    border-radius:18px;
+
+    background:rgba(59,130,246,.15);
+
+    color:#60A5FA;
+
+    transition:.35s;
+
+}
+
+.elv-node-content h4{
+
+    color:#fff;
+
+    font-size:18px;
+
+    margin-bottom:6px;
+
+    font-family: 'roboto', sans-serif;
+
+}
+
+.elv-node-content p{
+
+    color:#AAB8CF;
+
+    font-size:13px;
+
+    line-height:22px;
+
+    font-family: 'inter', sans-serif;   
+
+}
+
+/* ===========================
+        CONNECTION LINE
+=========================== */
+
+.elv-node-line{
+
+    position:absolute;
+
+    background:
+
+    linear-gradient(
+
+        90deg,
+
+        rgba(59,130,246,.8),
+
+        rgba(59,130,246,.15)
+
+    );
+
+    border-radius:50px;
+
+    z-index:-1;
+
+}
+
+/* ===========================
+        AI
+=========================== */
+
+.node-ai{
+
+    top:20px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+.node-ai .elv-node-line{
+
+    width:2px;
+
+    height:150px;
+
+    left:50%;
+
+    top:100%;
+
+}
+
+/* ===========================
+        PERFORMANCE
+=========================== */
+
+.node-performance{
+
+    left:30px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+}
+
+.node-performance .elv-node-line{
+
+    width:170px;
+
+    height:2px;
+
+    left:100%;
+
+    top:50%;
+
+}
+
+/* ===========================
+        SECURITY
+=========================== */
+
+.node-security{
+
+    right:30px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+}
+
+.node-security .elv-node-line{
+
+    width:170px;
+
+    height:2px;
+
+    right:100%;
+
+    top:50%;
+
+}
+
+/* ===========================
+        DESIGN
+=========================== */
+
+.node-design{
+
+    left:120px;
+
+    bottom:70px;
+
+}
+
+.node-design .elv-node-line{
+
+    width:150px;
+
+    height:2px;
+
+    left:100%;
+
+    top:40%;
+
+    transform:rotate(-18deg);
+
+}
+
+/* ===========================
+        SUPPORT
+=========================== */
+
+.node-support{
+
+    right:120px;
+
+    bottom:70px;
+
+}
+
+.node-support .elv-node-line{
+
+    width:150px;
+
+    height:2px;
+
+    right:100%;
+
+    top:40%;
+
+    transform:rotate(18deg);
+
+}
+
+/* ===========================
+        SEO
+=========================== */
+
+.node-seo{
+
+    left:50%;
+
+    bottom:-10px;
+
+    transform:translateX(-50%);
+
+}
+
+.node-seo .elv-node-line{
+
+    width:2px;
+
+    height:150px;
+
+    left:50%;
+
+    bottom:100%;
+
+}
+
+/* ==========================================================
+        ELVORIN TECHNOLOGIES
+        WHY CHOOSE
+        PART 2.3
+        PREMIUM ANIMATIONS
+========================================================== */
+
+/* ==========================================
+        NODE CARD
+========================================== */
+
+.elv-node-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    transition:
+
+    transform .45s cubic-bezier(.22,1,.36,1),
+
+    box-shadow .45s,
+
+    border-color .45s,
+
+    background .45s;
+
+}
+
+/* ==========================================
+        SHINE EFFECT
+========================================== */
+
+.elv-node-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-150%;
+
+    background:
+
+    linear-gradient(
+
+        120deg,
+
+        transparent 40%,
+
+        rgba(255,255,255,.22) 50%,
+
+        transparent 60%
+
+    );
+
+    transform:
+
+    translateX(-120%)
+
+    rotate(25deg);
+
+    transition:1s;
+
+}
+
+.elv-node-card:hover::before{
+
+    transform:
+
+    translateX(120%)
+
+    rotate(25deg);
+
+}
+
+/* ==========================================
+        NODE HOVER
+========================================== */
+
+.elv-node-card:hover{
+
+    transform:
+
+    translateY(-10px)
+
+    scale(1.04);
+
+    background:
+
+    rgba(255,255,255,.09);
+
+    border-color:
+
+    rgba(59,130,246,.45);
+
+    box-shadow:
+
+    0 30px 70px rgba(37,99,235,.25);
+
+}
+
+/* ==========================================
+        ICON
+========================================== */
+
+.elv-node-card:hover .elv-node-icon{
+
+    background:#2563EB;
+
+    color:#fff;
+
+    transform:
+
+    rotate(12deg)
+
+    scale(1.12);
+
+}
+
+.elv-node-icon{
+
+    transition:.4s;
+
+}
+
+/* ==========================================
+        TITLE
+========================================== */
+
+.elv-node-content h4{
+
+    transition:.35s;
+
+}
+
+.elv-node-card:hover h4{
+
+    color:#60A5FA;
+
+}
+
+/* ==========================================
+        LINE GLOW
+========================================== */
+
+.elv-node-line{
+
+    overflow:hidden;
+
+}
+
+.elv-node-line::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        #60A5FA,
+
+        transparent
+
+    );
+
+    animation:
+
+    lineMove 3s linear infinite;
+
+}
+
+/* ==========================================
+        MACBOOK
+========================================== */
+
+.elv-macbook{
+
+    transition:
+
+    transform .8s cubic-bezier(.22,1,.36,1);
+
+}
+
+.elv-showcase:hover .elv-macbook{
+
+    transform:
+
+    perspective(1800px)
+
+    rotateX(4deg)
+
+    rotateY(-5deg)
+
+    translateY(-12px)
+
+    scale(1.02);
+
+}
+
+/* ==========================================
+        SCREEN
+========================================== */
+
+.elv-screen img{
+
+    transition:
+
+    transform .8s ease;
+
+}
+
+.elv-showcase:hover .elv-screen img{
+
+    transform:scale(1.03);
+
+}
+
+/* ==========================================
+        FLOATING
+========================================== */
+
+.node-ai{
+
+    animation:
+
+    float1 5s ease-in-out infinite;
+
+}
+
+.node-performance{
+
+    animation:
+
+    float2 6s ease-in-out infinite;
+
+}
+
+.node-security{
+
+    animation:
+
+    float3 5.5s ease-in-out infinite;
+
+}
+
+.node-design{
+
+    animation:
+
+    float4 6s ease-in-out infinite;
+
+}
+
+.node-support{
+
+    animation:
+
+    float5 5.8s ease-in-out infinite;
+
+}
+
+.node-seo{
+
+    animation:
+
+    float6 6.2s ease-in-out infinite;
+
+}
+
+/* ==========================================
+        CTA
+========================================== */
+
+.elv-why-btn{
+
+    position:relative;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+}
+
+.elv-why-btn:hover{
+
+    transform:
+
+    translateY(-4px);
+
+}
+
+.elv-why-btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:100%;
+
+    height:100%;
+
+    background:
+
+    linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.30),
+
+        transparent
+
+    );
+
+    transition:.8s;
+
+}
+
+.elv-why-btn:hover::before{
+
+    left:120%;
+
+}
+
+/* ==========================================
+        KEYFRAMES
+========================================== */
+
+@keyframes lineMove{
+
+    from{
+
+        transform:translateX(-100%);
+
+    }
+
+    to{
+
+        transform:translateX(100%);
+
+    }
+
+}
+
+@keyframes float1{
+
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-15px);}
+
+}
+
+@keyframes float2{
+
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(18px);}
+
+}
+
+@keyframes float3{
+
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-14px);}
+
+}
+
+@keyframes float4{
+
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(16px);}
+
+}
+
+@keyframes float5{
+
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-12px);}
+
+}
+
+@keyframes float6{
+
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(15px);}
+
+}
+
+/* ==========================================
+        PERFORMANCE
+========================================== */
+
+.elv-node-card,
+.elv-macbook,
+.elv-node-line{
+
+    will-change:transform;
+
+}
+/* ==========================================================
+        ELVORIN TECHNOLOGIES
+        WHY CHOOSE
+        PART 2.4
+        RESPONSIVE & FINAL POLISH
+==========================================================*/
+
+/* ==========================================
+        LARGE DESKTOP
+========================================== */
+
+@media (max-width:1400px){
+
+    .elv-showcase{
+
+        height:760px;
+
+    }
+
+    .elv-macbook{
+
+        width:680px;
+
+    }
+
+    .elv-node-card{
+
+        width:220px;
+
+    }
+
+}
+
+/* ==========================================
+        LAPTOP
+========================================== */
+
+@media (max-width:1200px){
+
+    .elv-why{
+
+        padding:120px 0;
+
+    }
+
+    .elv-showcase{
+
+        height:700px;
+
+    }
+
+    .elv-macbook{
+
+        width:620px;
+
+    }
+
+    .elv-node-card{
+
+        width:200px;
+
+        padding:16px;
+
+    }
+
+    .elv-node-content h4{
+
+        font-size:16px;
+
+    }
+
+    .elv-node-content p{
+
+        font-size:12px;
+
+        line-height:20px;
+
+    }
+
+}
+
+/* ==========================================
+        TABLET
+========================================== */
+
+@media (max-width:992px){
+
+    .elv-why{
+
+        padding:100px 0;
+
+    }
+
+    .elv-why-container{
+
+        width:92%;
+
+    }
+
+    .elv-why-heading{
+
+        margin-bottom:60px;
+
+    }
+
+    .elv-why-heading h2{
+
+        font-size:42px;
+
+    }
+
+    .elv-why-heading p{
+
+        font-size:16px;
+
+        line-height:30px;
+
+    }
+
+    .elv-showcase{
+
+        height:auto;
+
+        padding:40px 0 20px;
+
+    }
+
+    .elv-macbook{
+
+        width:520px;
+
+    }
+
+    /* Hide exploded nodes */
+
+    .elv-node{
+
+        display:none;
+
+    }
+
+}
+
+/* ==========================================
+        MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+    .elv-why{
+
+        padding:80px 0;
+
+    }
+
+    .elv-why-heading{
+
+        margin-bottom:40px;
+
+    }
+
+    .elv-why-heading span{
+
+        font-size:12px;
+
+        padding:8px 18px;
+
+    }
+
+    .elv-why-heading h2{
+
+        font-size:32px;
+
+        line-height:1.2;
+
+    }
+
+    .elv-why-heading p{
+
+        font-size:15px;
+
+        line-height:28px;
+
+    }
+
+    .elv-showcase{
+
+        height:auto;
+
+    }
+
+    .elv-showcase-glow{
+
+        width:350px;
+
+        height:350px;
+
+    }
+
+    .elv-macbook{
+
+        width:100%;
+
+        max-width:420px;
+
+        animation:none;
+
+    }
+
+    .elv-showcase:hover .elv-macbook{
+
+        transform:none;
+
+    }
+
+    .elv-screen{
+
+        border-radius:8px;
+
+    }
+
+    .elv-why-btn{
+
+        width:100%;
+
+        justify-content:center;
+
+        margin-top:40px;
+
+    }
+
+}
+
+/* ==========================================
+        SMALL MOBILE
+========================================== */
+
+@media (max-width:480px){
+
+    .elv-why{
+
+        padding:40px 0;
+
+    }
+
+    .elv-why-heading h2{
+
+        font-size:28px;
+
+    }
+
+    .elv-why-heading p{
+
+        font-size:14px;
+
+        line-height:24px;
+
+    }
+
+    .elv-showcase-glow{
+
+        width:280px;
+
+        height:280px;
+
+    }
+
+    .elv-macbook{
+
+        max-width:330px;
+
+    }
+
+    .elv-showcase{
+        padding:0px;
+    }
+    .elv-why-cta{
+        margin: 0;
+    }
+
+}
+
+/* ==========================================
+        SCROLL ANIMATION
+========================================== */
+
+.elv-why-heading,
+.elv-showcase{
+
+    animation:fadeUp .9s ease both;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(50px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+        ACCESSIBILITY
+========================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    *,
+    *::before,
+    *::after{
+
+        animation:none !important;
+
+        transition:none !important;
+
+        scroll-behavior:auto !important;
+
+    }
+
+}
+
+/* ==========================================
+        PERFORMANCE
+========================================== */
+
+.elv-showcase,
+.elv-macbook,
+.elv-screen,
+.elv-node{
+
+    will-change:transform;
+
+    transform:translateZ(0);
+
+}
+
+img{
+
+    user-select:none;
+
+    -webkit-user-drag:none;
+
+}
+
+.elv-macbook img{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+}

@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+background:
+
+radial-gradient(circle at top,#14315f 0%,#050816 35%,#050816 100%);
+color:aliceblue
+
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:90%;
+    max-width:1320px;
+    margin:auto;
+}

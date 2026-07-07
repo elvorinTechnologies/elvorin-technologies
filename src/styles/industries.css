@@ -1,0 +1,1110 @@
+/* ==========================================================
+        ELVORIN TECHNOLOGIES
+        INDUSTRIES SECTION
+        PART 2.1
+========================================================== */
+
+:root {
+
+    --primary: #3B82F6;
+    --secondary: #2563EB;
+
+    --white: #ffffff;
+
+    --text: #AAB8CF;
+
+}
+
+/* ==========================================
+        SECTION
+========================================== */
+
+.elv-ind-section {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding-top: 50px;
+    padding-bottom:0px;
+    margin: 0px;
+    background: #050816;
+
+}
+
+/* Glow */
+
+.elv-ind-section::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 900px;
+
+    height: 900px;
+
+    right: -250px;
+
+    top: -300px;
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(circle,
+
+            rgba(59, 130, 246, .18),
+
+            transparent 70%);
+
+    filter: blur(80px);
+
+}
+
+/* Grid */
+
+.elv-ind-section::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+
+        linear-gradient(rgba(255, 255, 255, .025) 1px, transparent 1px),
+
+        linear-gradient(90deg, rgba(255, 255, 255, .025) 1px, transparent 1px);
+
+    background-size: 70px 70px;
+
+    mask-image:
+
+        radial-gradient(circle, #fff 35%, transparent 100%);
+
+    opacity: .35;
+
+}
+
+/* ==========================================
+        CONTAINER
+========================================== */
+
+.elv-ind-container {
+
+    width: 90%;
+
+    max-width: 1500px;
+
+    margin: auto;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+/* ==========================================
+        HEADING
+========================================== */
+
+.elv-ind-heading {
+
+    max-width: 760px;
+
+    margin: auto;
+
+    text-align: center;
+
+    margin-bottom: 70px;
+
+}
+
+.elv-ind-heading span {
+
+    display: inline-flex;
+
+    padding: 10px 22px;
+
+    border-radius: 50px;
+
+    background: rgba(59, 130, 246, .10);
+
+    border: 1px solid rgba(59, 130, 246, .20);
+
+    color: #7EB0FF;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 24px;
+
+    font-family: 'inter', sans-serif;
+}
+
+.elv-ind-heading h2 {
+
+    color: #fff;
+
+    font-size: 56px;
+
+    font-weight: 700;
+
+    line-height: 1.15;
+
+    margin-bottom: 22px;
+    font-family: 'roboto', sans-serif;  
+
+}
+
+.elv-ind-heading p {
+
+    color: var(--text);
+
+    font-size: 18px;
+
+    line-height: 34px;
+    font-family: 'inter', sans-serif;
+
+}
+
+/* ==========================================
+        MOSAIC GRID
+========================================== */
+
+.elv-ind-grid {
+
+    columns: 3;
+
+    column-gap: 24px;
+
+}
+
+/* ==========================================
+        CARD
+========================================== */
+
+.elv-ind-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: inline-block;
+
+    width: 100%;
+
+    margin-bottom: 24px;
+
+    break-inside: avoid;
+
+    border-radius: 28px;
+
+    background: #101827;
+
+    border: 1px solid rgba(255, 255, 255, .08);
+
+    backdrop-filter: blur(18px);
+
+    -webkit-backdrop-filter: blur(18px);
+
+}
+
+.elv-ind-card:nth-child(1) {
+
+    height: 380px;
+
+}
+
+.elv-ind-card:nth-child(2) {
+
+    height: 220px;
+
+}
+
+.elv-ind-card:nth-child(3) {
+
+    height: 360px;
+
+}
+
+.elv-ind-card:nth-child(4) {
+
+    height: 250px;
+
+}
+
+.elv-ind-card:nth-child(5) {
+
+    height: 220px;
+
+}
+
+.elv-ind-card:nth-child(6) {
+
+    height: 250px;
+
+}
+
+.elv-ind-card:nth-child(7) {
+
+    height: 220px;
+
+}
+
+.elv-ind-card:nth-child(8) {
+
+    height: 380px;
+
+}
+
+.elv-ind-card:nth-child(9) {
+
+    height: 220px;
+
+}
+
+.elv-ind-card:nth-child(10) {
+
+    height: 250px;
+
+}
+
+.elv-ind-card:nth-child(11) {
+
+    height: 220px;
+
+}
+
+.elv-ind-card:nth-child(12) {
+
+    height: 360px;
+
+}
+
+/* ==========================================================
+        ELVORIN TECHNOLOGIES
+        INDUSTRIES SECTION
+        PART 2.2
+========================================================== */
+
+/* ==========================================
+        IMAGE
+========================================== */
+
+.elv-ind-image {
+
+    position: absolute;
+
+    inset: 0;
+
+    overflow: hidden;
+
+    z-index: 1;
+
+}
+
+.elv-ind-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform .8s cubic-bezier(.22, 1, .36, 1),
+        filter .6s ease;
+
+}
+
+/* ==========================================
+        OVERLAY
+========================================== */
+
+.elv-ind-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 2;
+
+    background:
+
+        linear-gradient(180deg,
+
+            rgba(5, 8, 22, .08) 0%,
+
+            rgba(5, 8, 22, .45) 35%,
+
+            rgba(5, 8, 22, .95) 100%);
+
+}
+
+/* Premium Blue Glow */
+
+.elv-ind-overlay::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        radial-gradient(circle at top right,
+
+            rgba(59, 130, 246, .22),
+
+            transparent 45%);
+
+}
+
+/* ==========================================
+        CONTENT
+========================================== */
+
+.elv-ind-content {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 5;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    padding: 28px;
+
+}
+
+/* ==========================================
+        ICON
+========================================== */
+
+.elv-ind-icon {
+
+    width: 64px;
+
+    height: 64px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, .10);
+
+    border: 1px solid rgba(255, 255, 255, .15);
+
+    backdrop-filter: blur(20px);
+
+    color: #60A5FA;
+
+    margin-bottom: 18px;
+
+    flex-shrink: 0;
+
+}
+
+/* ==========================================
+        TITLE
+========================================== */
+
+.elv-ind-content h3 {
+
+    margin: 0 0 10px;
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    color: #fff;
+
+    font-family: 'roboto', sans-serif;
+
+}
+
+/* ==========================================
+        DESCRIPTION
+========================================== */
+
+.elv-ind-content p {
+
+    margin: 0 0 18px;
+
+    color: #BFC9DA;
+
+    line-height: 1.6;
+    font-family: 'inter', sans-serif;
+
+}
+
+/* ==========================================
+        CARD BUTTON
+========================================== */
+
+.elv-ind-btn {
+
+    width: max-content;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 14px 24px;
+
+    border: none;
+
+    outline: none;
+
+    cursor: pointer;
+
+    border-radius: 50px;
+
+    background:
+
+        rgba(255, 255, 255, .10);
+
+    border: 1px solid rgba(255, 255, 255, .12);
+
+    color: #fff;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    backdrop-filter: blur(18px);
+
+    transition: .35s;
+
+}
+
+.elv-ind-btn svg {
+
+    transition: .35s;
+
+}
+
+/* ==========================================
+        SECTION CTA
+========================================== */
+
+.elv-ind-footer {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 70px;
+
+}
+
+.elv-ind-main-btn {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 18px 34px;
+
+    border: none;
+
+    outline: none;
+
+    cursor: pointer;
+
+    border-radius: 60px;
+
+    color: #fff;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    background:
+
+        linear-gradient(135deg,
+
+            #3B82F6,
+
+            #2563EB);
+
+    box-shadow:
+
+        0 18px 45px rgba(37, 99, 235, .35);
+
+    transition: .4s;
+
+}
+
+.elv-ind-main-btn svg {
+
+    transition: .35s;
+
+}
+
+/* ==========================================================
+        ELVORIN TECHNOLOGIES
+        INDUSTRIES SECTION
+        PART 2.3
+        PREMIUM HOVER EFFECTS
+========================================================== */
+
+/* ==========================================
+        CARD
+========================================== */
+
+.elv-ind-card {
+
+    transition:
+        transform .55s cubic-bezier(.22, 1, .36, 1),
+        box-shadow .45s,
+        border-color .45s;
+
+    cursor: pointer;
+
+}
+
+/* ==========================================
+        IMAGE ZOOM
+========================================== */
+
+.elv-ind-card:hover .elv-ind-image img {
+
+    transform: scale(1.12);
+
+    filter: brightness(1.08);
+
+}
+
+/* ==========================================
+        CARD LIFT
+========================================== */
+
+.elv-ind-card:hover {
+
+    transform:
+
+        translateY(-14px) scale(1.02);
+
+    border-color:
+
+        rgba(59, 130, 246, .45);
+
+    box-shadow:
+
+        0 35px 80px rgba(37, 99, 235, .22);
+
+}
+
+/* ==========================================
+        BLUE GLOW
+========================================== */
+
+.elv-ind-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: inherit;
+
+    background:
+
+        radial-gradient(circle at top right,
+
+            rgba(59, 130, 246, .25),
+
+            transparent 55%);
+
+    opacity: 0;
+
+    transition: .45s;
+
+    z-index: 2;
+
+}
+
+.elv-ind-card:hover::before {
+
+    opacity: 1;
+
+}
+
+/* ==========================================
+        SHINE EFFECT
+========================================== */
+
+.elv-ind-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: -120%;
+
+    width: 70%;
+
+    height: 100%;
+
+    background:
+
+        linear-gradient(90deg,
+
+            transparent,
+
+            rgba(255, 255, 255, .22),
+
+            transparent);
+
+    transform: skewX(-25deg);
+
+    transition: 1s;
+
+    z-index: 3;
+
+}
+
+.elv-ind-card:hover::after {
+
+    left: 150%;
+
+}
+
+/* ==========================================
+        ICON
+========================================== */
+
+.elv-ind-icon {
+
+    transition: .45s;
+
+}
+
+.elv-ind-card:hover .elv-ind-icon {
+
+    background: #2563EB;
+
+    color: #fff;
+
+    transform:
+
+        rotate(10deg) scale(1.12);
+
+}
+
+/* ==========================================
+        TITLE
+========================================== */
+
+.elv-ind-content h3 {
+
+    transition: .35s;
+
+}
+
+.elv-ind-card:hover h3 {
+
+    color: #60A5FA;
+
+}
+
+/* ==========================================
+        BUTTON
+========================================== */
+
+.elv-ind-btn {
+
+    transition: .35s;
+
+}
+
+.elv-ind-btn:hover {
+
+    background: #2563EB;
+
+}
+
+.elv-ind-btn:hover svg {
+
+    transform:
+
+        translateX(5px) rotate(-45deg);
+
+}
+
+/* ==========================================
+        CTA
+========================================== */
+
+.elv-ind-main-btn {
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.elv-ind-main-btn::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: -120%;
+
+    width: 80%;
+
+    height: 100%;
+
+    background:
+
+        linear-gradient(90deg,
+
+            transparent,
+
+            rgba(255, 255, 255, .35),
+
+            transparent);
+
+    transform: skewX(-25deg);
+
+    transition: .8s;
+
+}
+
+.elv-ind-main-btn:hover {
+
+    transform:
+
+        translateY(-5px);
+
+}
+
+.elv-ind-main-btn:hover::before {
+
+    left: 140%;
+
+}
+
+.elv-ind-main-btn:hover svg {
+
+    transform:
+
+        translateX(6px) rotate(-45deg);
+
+}
+
+/* ==========================================
+        FLOATING
+========================================== */
+
+.elv-ind-card:nth-child(odd) {
+
+    animation:
+
+        cardFloat1 6s ease-in-out infinite;
+
+}
+
+.elv-ind-card:nth-child(even) {
+
+    animation:
+
+        cardFloat2 7s ease-in-out infinite;
+
+}
+
+/* ==========================================
+        KEYFRAMES
+========================================== */
+
+@keyframes cardFloat1 {
+
+    0%,
+    100% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-8px);
+
+    }
+
+}
+
+@keyframes cardFloat2 {
+
+    0%,
+    100% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(8px);
+
+    }
+
+}
+
+/* ==========================================
+        PERFORMANCE
+========================================== */
+
+.elv-ind-card,
+.elv-ind-image img,
+.elv-ind-icon {
+
+    will-change: transform;
+
+}
+
+/* ==========================================================
+        RESPONSIVE
+========================================================== */
+
+/* Large Desktop */
+
+@media (max-width:1400px) {
+
+    .elv-ind-grid {
+
+        columns: 3;
+        column-gap: 20px;
+
+    }
+
+}
+
+/* Laptop */
+
+@media (max-width:1200px) {
+
+    .elv-ind-section {
+
+        padding: 120px 0;
+
+    }
+
+    .elv-ind-heading h2 {
+
+        font-size: 48px;
+
+    }
+
+    .elv-ind-grid {
+
+        columns: 3;
+        column-gap: 20px;
+
+    }
+
+}
+
+/* Tablet */
+
+@media (max-width:992px) {
+
+    .elv-ind-section {
+
+        padding: 100px 0;
+
+    }
+
+    .elv-ind-container {
+
+        width: 92%;
+
+    }
+
+    .elv-ind-heading {
+
+        margin-bottom: 50px;
+
+    }
+
+    .elv-ind-heading h2 {
+
+        font-size: 40px;
+
+    }
+
+    .elv-ind-heading p {
+
+        font-size: 16px;
+        line-height: 30px;
+
+    }
+
+    .elv-ind-grid {
+
+        columns: 2;
+        column-gap: 18px;
+
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width:768px) {
+
+    .elv-ind-section {
+
+        padding: 80px 0;
+
+    }
+
+    .elv-ind-heading h2 {
+
+        font-size: 32px;
+
+    }
+
+    .elv-ind-heading p {
+
+        font-size: 15px;
+        line-height: 28px;
+
+    }
+
+    .elv-ind-grid {
+
+        columns: 1;
+        column-gap: 0;
+
+    }
+
+    .elv-ind-card {
+
+        margin-bottom: 18px;
+
+    }
+
+    .elv-ind-content {
+
+        padding: 22px;
+
+    }
+
+    .elv-ind-content h3 {
+
+        font-size: 22px;
+
+    }
+
+    .elv-ind-content p {
+
+        font-size: 14px;
+        line-height: 24px;
+
+    }
+
+    .elv-ind-icon {
+
+        width: 58px;
+        height: 58px;
+
+    }
+
+    .elv-ind-btn {
+
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .elv-ind-main-btn {
+
+        width: 100%;
+        justify-content: center;
+
+    }
+
+}
+
+/* Small Mobile */
+
+@media (max-width:480px) {
+
+    .elv-ind-heading h2 {
+
+        font-size: 28px;
+
+    }
+
+    .elv-ind-heading span {
+
+        font-size: 12px;
+
+        padding: 8px 16px;
+
+    }
+
+    .elv-ind-content {
+
+        padding: 18px;
+
+    }
+
+    .elv-ind-section {
+        padding: 40px 0;
+        padding-bottom: 10px;
+    }
+
+    .elv-ind-heading.aos-init.aos-animate {
+        margin-bottom: 20px;
+    }
+
+    .elv-ind-footer.aos-init.aos-animate {
+        margin-top: 20px;
+    }
+
+}
+
+.elv-ind-card:nth-child(9) {
+    height: 268px;
+}
+
+.elv-ind-card:nth-child(5) {
+    height: 264px;
+}
+
+.elv-ind-card:nth-child(2n) {
+    animation: cardFloat2 7s ease-in-out infinite;
+    height: 277px;
+}
+
+.elv-ind-card:nth-child(2n+1) {
+    animation: cardFloat1 6s ease-in-out infinite;
+    height: 277px;
+}

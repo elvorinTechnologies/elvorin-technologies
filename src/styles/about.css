@@ -1,0 +1,934 @@
+/* ==========================================================
+        ELVORIN TECHNOLOGIES
+        ABOUT SECTION - PART 2.1
+========================================================== */
+
+:root{
+
+    --primary:#3B82F6;
+    --secondary:#2563EB;
+
+    --bg:#050816;
+
+    --text:#AEB9CF;
+
+    --white:#ffffff;
+
+    --glass:rgba(255,255,255,.05);
+
+    --glass-border:rgba(255,255,255,.08);
+
+}
+
+/* ===========================
+        SECTION
+=========================== */
+
+.about{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:50px 0;
+
+    background:#050816;
+
+}
+
+/* Background Glow */
+
+.about::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:650px;
+
+    height:650px;
+
+    top:-180px;
+
+    left:-180px;
+
+    border-radius:50%;
+
+    background:radial-gradient(circle,
+    rgba(59,130,246,.15),
+    transparent 70%);
+
+    filter:blur(40px);
+
+    animation:aboutGlow 8s ease-in-out infinite;
+
+}
+
+/* Grid */
+
+.about::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:
+
+    linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),
+
+    linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
+
+    background-size:70px 70px;
+
+    mask-image:radial-gradient(circle,#fff 30%,transparent 100%);
+
+    opacity:.45;
+
+}
+
+/* ===========================
+        CONTAINER
+=========================== */
+
+.about-container{
+
+    width:90%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    align-items:center;
+
+    gap:90px;
+
+    position:relative;
+
+    z-index:2;
+    flex-direction: column-reverse;
+
+}
+
+/* ===========================
+        IMAGE
+=========================== */
+
+.about-image{
+
+    position:relative;
+    
+
+}
+
+.about-image img{
+    
+
+    width:100%;
+
+    border-radius:32px;
+
+    display:block;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+
+    0 35px 80px rgba(0,0,0,.35);
+
+}
+
+/* Glow Behind Image */
+
+.image-glow{
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+    inset:0;
+
+    border-radius:32px;
+
+    background:
+
+    radial-gradient(circle,
+    rgba(59,130,246,.20),
+    transparent 70%);
+
+    filter:blur(35px);
+
+    z-index:-1;
+
+}
+
+/* ===========================
+        CONTENT
+=========================== */
+
+.about-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+    order: -1;
+
+}
+
+/* Badge */
+
+.about-badge{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:10px 18px;
+
+    border-radius:50px;
+
+    background:rgba(59,130,246,.10);
+
+    border:1px solid rgba(59,130,246,.20);
+
+    color:#7EB0FF;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:26px;
+
+    backdrop-filter:blur(18px);
+    font-family: "inter", sans-serif;
+
+}
+
+/* Heading */
+
+.about-content h2{
+
+    font-size:56px;
+
+    line-height:1.15;
+
+    font-weight:700;
+
+    color:#fff;
+
+    margin-bottom:24px;
+
+    max-width:650px;
+    font-family: "roboto", sans-serif;
+
+}
+
+/* Gradient */
+
+.about-content h2 span{
+
+    background:linear-gradient(
+        90deg,
+        #60A5FA,
+        #2563EB
+    );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+    font-family: "roboto", sans-serif;
+
+}
+
+/* Description */
+
+.about-content p{
+
+    max-width:600px;
+
+    font-size:18px;
+
+    line-height:34px;
+
+    color:var(--text);
+    font-family: "inter", sans-serif;
+
+}
+
+/* ===========================
+        ANIMATION
+=========================== */
+
+@keyframes aboutGlow{
+
+    0%,100%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.08);
+
+    }
+
+}
+
+/* ==========================================================
+        ABOUT SECTION
+        PART 2.2
+        Floating Cards
+        Features
+        Stats
+        CTA
+========================================================== */
+
+/* ===========================
+        FLOATING BOXES
+=========================== */
+
+.floating-box{
+
+    position:absolute;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    padding:18px 22px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.06);
+
+    backdrop-filter:blur(24px);
+
+    -webkit-backdrop-filter:blur(24px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+    0 25px 60px rgba(0,0,0,.30);
+
+    transition:.4s ease;
+
+}
+
+.floating-box:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#3B82F6;
+
+}
+
+.floating-box svg{
+
+    color:#60A5FA;
+
+    width:24px;
+
+    height:24px;
+
+}
+
+.floating-box h4{
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    margin-bottom:4px;
+
+}
+
+.floating-box span{
+
+    color:#AEB9CF;
+
+    font-size:13px;
+
+}
+
+/* Position */
+
+.box-one{
+
+    top:35px;
+
+    left:-40px;
+
+    animation:floatBox 5s ease-in-out infinite;
+
+}
+
+.box-two{
+
+    bottom:35px;
+
+    right:-40px;
+
+    animation:floatBox 5s ease-in-out infinite 1.5s;
+
+}
+
+/* ===========================
+        FEATURE LIST
+=========================== */
+
+.about-features{
+
+    margin-top:40px;
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:18px;
+
+}
+
+.feature-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:16px 20px;
+
+    border-radius:16px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.06);
+
+    transition:.35s;
+
+}
+
+.feature-item:hover{
+
+    background:rgba(255,255,255,.07);
+
+    border-color:#3B82F6;
+
+    transform:translateY(-5px);
+
+}
+
+.feature-item svg{
+
+    color:#60A5FA;
+
+    flex-shrink:0;
+
+}
+
+.feature-item span{
+
+    color:#fff;
+
+    font-size:15px;
+
+    font-family: "inter", sans-serif;
+    
+    font-weight:500;
+
+}
+
+/* ===========================
+        STATS
+=========================== */
+
+.about-stats{
+
+    display:flex;
+
+    gap:55px;
+
+    margin-top:50px;
+
+}
+
+.about-stats h3{
+
+    color:#fff;
+
+    font-size:42px;
+
+    font-weight:800;
+
+    margin-bottom:6px;
+
+}
+
+.about-stats span{
+
+    color:#AEB9CF;
+
+    font-size:14px;
+
+}
+
+/* ===========================
+        BUTTON
+=========================== */
+
+.about-btn{
+
+    margin-top:45px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:18px 34px;
+
+    border:none;
+
+    border-radius:60px;
+
+    cursor:pointer;
+
+    background:linear-gradient(
+        135deg,
+        #3B82F6,
+        #2563EB
+    );
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    box-shadow:
+    0 18px 45px rgba(37,99,235,.35);
+
+}
+
+.about-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 25px 55px rgba(37,99,235,.45);
+
+}
+
+.about-btn svg{
+
+    transition:.35s;
+
+}
+
+.about-btn:hover svg{
+
+    transform:translateX(5px);
+
+}
+
+/* ===========================
+        FLOAT ANIMATION
+=========================== */
+
+@keyframes floatBox{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+/* ==========================================================
+        ABOUT SECTION
+        PART 2.3 - FINAL
+========================================================== */
+
+/* ===========================
+        IMAGE HOVER
+=========================== */
+
+.about-image{
+
+    /* overflow:hidden; */
+
+    border-radius:32px;
+    order: -1;
+
+}
+
+.about-image img{
+
+    transition:transform .8s ease;
+
+}
+
+.about-image:hover img{
+
+    transform:scale(1.05);
+
+}
+
+
+/* ===========================
+        CARD GLOW
+=========================== */
+
+.feature-item{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.feature-item::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:220px;
+
+    height:220px;
+
+    left:-180px;
+
+    top:-180px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(circle,
+
+    rgba(59,130,246,.20),
+
+    transparent 70%);
+
+    transition:.5s;
+
+}
+
+.feature-item:hover::before{
+
+    left:-70px;
+
+    top:-70px;
+
+}
+
+/* ===========================
+        BUTTON SHINE
+=========================== */
+
+.about-btn{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.about-btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-120%;
+
+    top:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.30),
+
+        transparent
+
+    );
+
+    transition:.7s;
+
+}
+
+.about-btn:hover::before{
+
+    left:120%;
+
+}
+
+/* ===========================
+        RESPONSIVE
+=========================== */
+
+@media (max-width:1200px){
+
+    .about-container{
+
+        gap:60px;
+
+    }
+
+    .about-content h2{
+
+        font-size:52px;
+
+    }
+
+}
+
+@media (max-width:992px){
+
+    .about{
+
+        padding:100px 0;
+
+    }
+
+    .about-container{
+
+        grid-template-columns:1fr;
+
+        gap:70px;
+
+    }
+
+    .about-content{
+
+        align-items:center;
+
+        text-align:center;
+
+    }
+
+    .about-content h2{
+
+        font-size:46px;
+
+    }
+
+    .about-content p{
+
+        max-width:700px;
+
+    }
+
+    .about-features{
+
+        grid-template-columns:1fr 1fr;
+
+        width:100%;
+
+    }
+
+    .about-stats{
+
+        justify-content:center;
+
+    }
+
+    .box-one{
+
+        left:10px;
+
+    }
+
+    .box-two{
+
+        right:10px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .about{
+
+        padding:80px 0;
+    }
+
+    .about-container{
+
+        width:92%;
+        
+        gap:50px;
+        
+
+    }
+
+    .about-content h2{
+
+        font-size:36px;
+
+        line-height:1.2;
+
+    }
+
+    .about-content p{
+
+        font-size:16px;
+
+        line-height:30px;
+
+    }
+
+    .about-features{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .feature-item{
+
+        padding:16px;
+
+    }
+
+    .about-stats{
+
+        flex-wrap:wrap;
+
+        gap:30px;
+
+    }
+
+    .about-stats h3{
+
+        font-size:34px;
+
+    }
+
+    .about-btn{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+    .floating-box{
+
+        display:none;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .about{
+
+        padding-top: 40px;
+    padding-bottom: 40px;
+
+
+    }
+
+    .about-content h2{
+
+        font-size:30px;
+
+    }
+
+    .about-content p{
+
+        font-size:15px;
+
+        line-height:28px;
+
+    }
+
+    .about-badge{
+
+        font-size:12px;
+
+        padding:8px 16px;
+
+    }
+
+    .about-stats{
+
+        flex-direction:column;
+
+        gap:22px;
+
+    }
+
+    .about-stats h3{
+
+        font-size:30px;
+
+    }
+
+}
+
+/* ===========================
+        AOS FIX
+=========================== */
+
+[data-aos]{
+
+    will-change:transform,opacity;
+
+}
+
+/* ===========================
+        PERFORMANCE
+=========================== */
+
+.about-image,
+.feature-item,
+.about-btn,
+.floating-box{
+
+    will-change:transform;
+
+}

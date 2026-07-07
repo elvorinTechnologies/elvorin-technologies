@@ -1,0 +1,730 @@
+/* ==========================================================
+        ELVORIN TECHNOLOGIES
+        TRUSTED SECTION
+        PART 2
+========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root{
+
+    --primary:#3B82F6;
+    --secondary:#2563EB;
+
+    --white:#ffffff;
+    --text:#AAB5C8;
+
+}
+
+/* ======================================
+        SECTION
+====================================== */
+
+.trusted{
+
+    position:relative;
+
+    padding:40px 0;
+
+    overflow:hidden;
+
+    background:#050816;
+
+}
+
+/* Glow */
+
+.trusted::before{
+
+content:"";
+
+position:absolute;
+
+width:700px;
+
+height:700px;
+
+background:
+
+radial-gradient(circle,
+
+rgba(37,99,235,.14),
+
+transparent 70%);
+
+top:-250px;
+
+right:-180px;
+
+filter:blur(60px);
+
+animation:glowMove 8s ease infinite;
+
+}
+
+/* Grid */
+
+.trusted::after{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background-image:
+
+linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+
+linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+
+background-size:70px 70px;
+
+mask-image:radial-gradient(circle,#fff 35%,transparent 100%);
+
+opacity:.4;
+
+}
+
+@keyframes glowMove{
+
+0%,100%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.1);
+
+}
+
+}
+
+/* ======================================
+        CONTAINER
+====================================== */
+
+.trusted-container{
+
+width:100%;
+
+max-width:1400px;
+
+margin:auto;
+
+position:relative;
+
+z-index:2;
+
+}
+
+/* ======================================
+        HEADING
+====================================== */
+
+.trusted-heading{
+
+text-align:center;
+
+max-width:760px;
+
+margin:auto;
+
+margin-bottom:20px;
+
+opacity:0;
+
+
+}
+
+.trusted-heading span{
+
+display:inline-flex;
+
+padding:10px 20px;
+
+border-radius:50px;
+
+background:rgba(59,130,246,.10);
+
+border:1px solid rgba(59,130,246,.20);
+
+color:#7EB0FF;
+
+font-size:14px;
+
+font-weight:600;
+
+margin-bottom:24px;
+font-family: 'Inter', sans-serif;
+
+}
+
+.trusted-heading h2{
+
+font-size:56px;
+
+line-height:1.15;
+
+font-weight:700;
+
+color:#fff;
+
+margin-bottom:10px;
+
+font-family: 'roboto', sans-serif;
+
+}
+
+.trusted-heading p{
+
+font-size:18px;
+
+line-height:34px;
+
+color:var(--text);
+font-family: 'Inter', sans-serif;
+
+}
+
+/* ======================================
+        MARQUEE
+====================================== */
+
+.marquee{
+
+    position: relative;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    padding: 20px 0;
+    opacity:0;
+
+    transform:translateY(80px);
+
+}
+
+
+/* Track */
+
+.marquee-track{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 24px;
+
+    width: 100%;
+
+    animation:marquee 24s linear infinite;
+
+}
+
+
+
+
+/* ======================================
+        CARD
+====================================== */
+
+.tech-card{
+
+min-width:280px;
+
+display:flex;
+
+align-items:center;
+
+gap:18px;
+
+padding:22px;
+
+border-radius:22px;
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+backdrop-filter:blur(22px);
+
+-webkit-backdrop-filter:blur(22px);
+
+transition:.35s;
+
+box-shadow:
+
+0 15px 40px rgba(0,0,0,.25);
+
+
+
+}
+
+/* Hover */
+
+.tech-card:hover{
+
+transform:translateY(-10px);
+
+border-color:#3B82F6;
+
+background:rgba(255,255,255,.08);
+
+box-shadow:
+
+0 20px 60px rgba(37,99,235,.20);
+
+}
+
+/* ======================================
+        ICON
+====================================== */
+
+.tech-icon{
+
+width:64px;
+
+height:64px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+border-radius:18px;
+
+background:rgba(59,130,246,.10);
+
+color:#60A5FA;
+
+font-size:30px;
+
+flex-shrink:0;
+
+transition:.35s;
+
+}
+
+.tech-card:hover .tech-icon{
+
+transform:rotate(10deg) scale(1.1);
+
+background:#2563EB;
+
+color:#fff;
+
+}
+
+/* ======================================
+        TEXT
+====================================== */
+
+.tech-card h4{
+
+font-size:18px;
+
+font-weight:700;
+
+color:#fff;
+
+margin-bottom:6px;
+
+font-family: "Inter", sans-serif;
+
+}
+
+.tech-card span{
+
+font-size:14px;
+
+color:#AAB5C8;
+
+line-height:1.5;
+font-family: "popins", sans-serif;
+
+}
+
+/* ======================================
+        ANIMATIONS
+====================================== */
+
+@keyframes marquee{
+
+    from{
+
+        transform: translateX(0);
+
+    }
+
+    to{
+
+        transform: translateX(-50%);
+
+    }
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+/* ==========================================================
+        TRUSTED SECTION
+        PART 3 - FINAL
+==========================================================*/
+
+/* ===========================
+      PAGE LOAD ANIMATION
+=========================== */
+
+.tech-card{
+
+    opacity:0;
+
+    animation:cardFade .8s ease forwards;
+
+}
+
+.tech-card:nth-child(1){animation-delay:.1s;}
+.tech-card:nth-child(2){animation-delay:.2s;}
+.tech-card:nth-child(3){animation-delay:.3s;}
+.tech-card:nth-child(4){animation-delay:.4s;}
+.tech-card:nth-child(5){animation-delay:.5s;}
+.tech-card:nth-child(6){animation-delay:.6s;}
+.tech-card:nth-child(7){animation-delay:.7s;}
+.tech-card:nth-child(8){animation-delay:.8s;}
+.tech-card:nth-child(9){animation-delay:.9s;}
+.tech-card:nth-child(10){animation-delay:1s;}
+.tech-card:nth-child(11){animation-delay:1.1s;}
+.tech-card:nth-child(12){animation-delay:1.2s;}
+
+@keyframes cardFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===========================
+      CARD GLOW
+=========================== */
+
+.tech-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.tech-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:250px;
+
+    height:250px;
+
+    background:
+
+    radial-gradient(circle,
+
+    rgba(59,130,246,.18),
+
+    transparent 70%);
+
+    left:-150px;
+
+    top:-150px;
+
+    transition:.5s;
+
+}
+
+.tech-card:hover::before{
+
+    left:-80px;
+
+    top:-80px;
+
+}
+
+/* ===========================
+      ICON FLOAT
+=========================== */
+
+.tech-icon{
+
+    animation:iconFloat 4s ease-in-out infinite;
+
+}
+
+@keyframes iconFloat{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-8px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===========================
+      RESPONSIVE
+=========================== */
+
+@media(max-width:1200px){
+
+.tech-card{
+
+min-width:240px;
+
+}
+
+.trusted-heading h2{
+
+font-size:46px;
+
+}
+
+}
+
+@media(max-width:992px){
+
+.trusted{
+
+padding:100px 0;
+
+}
+
+.trusted-heading{
+
+margin-bottom:60px;
+
+}
+
+.trusted-heading h2{
+
+font-size:40px;
+
+}
+
+.trusted-heading p{
+
+font-size:16px;
+
+line-height:30px;
+
+}
+
+.marquee-track{
+
+gap:20px;
+
+animation-duration:28s;
+
+}
+
+.tech-card{
+
+min-width:220px;
+
+padding:18px;
+
+}
+
+}
+
+@media (max-width:768px){
+
+    .trusted{
+
+        padding:70px 0;
+
+    }
+
+    .trusted-container{
+
+        width:92%;
+
+    }
+
+    .trusted-heading{
+
+        margin-bottom:35px;
+
+    }
+
+    .trusted-heading h2{
+
+        font-size:34px;
+
+        line-height:1.2;
+
+    }
+
+    .trusted-heading p{
+
+        font-size:15px;
+
+        line-height:28px;
+
+    }
+
+    .marquee{
+
+        padding:10px 0;
+
+    }
+
+    .marquee-track{
+
+        display:flex;
+
+        width:max-content;
+
+        gap:16px;
+
+        animation:marquee 44s linear infinite;
+
+    }
+
+    .tech-card{
+
+        min-width:230px;
+
+        padding:16px;
+
+        border-radius:18px;
+
+        gap:14px;
+
+    }
+
+    .tech-icon{
+
+        width:50px;
+
+        height:50px;
+
+        font-size:22px;
+
+    }
+
+    .tech-card h4{
+
+        font-size:16px;
+
+    }
+
+    .tech-card span{
+
+        font-size:12px;
+
+        line-height:18px;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .trusted{
+
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+    }
+
+    .trusted-heading h2{
+
+        font-size:28px;
+
+    }
+
+    .trusted-heading p{
+
+        font-size:14px;
+
+        line-height:24px;
+
+    }
+
+    .tech-card{
+
+        min-width:190px;
+
+        padding:14px;
+
+    }
+
+    .tech-icon{
+
+        width:44px;
+
+        height:44px;
+
+        font-size:20px;
+
+    }
+
+}
+
+/* ===========================
+      PERFORMANCE
+=========================== */
+
+.marquee-track,
+.tech-card,
+.tech-icon{
+
+    will-change:transform;
+
+}
