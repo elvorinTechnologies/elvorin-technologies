@@ -189,7 +189,7 @@ function Hero() {
 
           {/* Floating Cards */}
 
-          <div className="floating-card card-one">
+          <div className="floating-hero-card card-1">
 
             <Globe />
 
@@ -197,7 +197,7 @@ function Hero() {
 
           </div>
 
-          <div className="floating-card card-two">
+          <div className="floating-hero-card card-2">
 
             <Star />
 

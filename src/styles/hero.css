@@ -647,7 +647,7 @@ transform:translateY(0);
       FLOATING CARDS
 =========================== */
 
-.floating-card{
+.floating-hero-card{
 
     position:absolute;
 
@@ -675,6 +675,7 @@ transform:translateY(0);
     animation:float 5s ease-in-out infinite;
 
     z-index:20;
+    /* width: 300px; */
 
 }
 
@@ -684,7 +685,7 @@ transform:translateY(0);
 
 }
 
-.card-one{
+.card-1{
 
     top:40px;
 
@@ -692,7 +693,7 @@ transform:translateY(0);
 
 }
 
-.card-two{
+.card-2{
 
     left:-60px;
 

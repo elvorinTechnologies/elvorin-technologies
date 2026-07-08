@@ -226,9 +226,9 @@ function Navbar() {
 
                     </div>
 
-                    {/* <NavLink to="/portfolio">
+                    <NavLink to="/portfolio">
                         Portfolio
-                    </NavLink> */}
+                    </NavLink>
 
                     <NavLink to="/contact">
                         Contact
