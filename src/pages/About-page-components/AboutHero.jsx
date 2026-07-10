@@ -4,107 +4,155 @@ import { Link } from "react-router-dom";
 
 import {
   ArrowRight,
-  Sparkles,
   ChevronRight,
-  Briefcase,
-  Users,
+  Sparkles,
+  BriefcaseBusiness,
+  Bot,
+  Globe,
+  MonitorSmartphone,
   ShieldCheck,
-  Trophy,
+  Rocket,
+  Layers3,
 } from "lucide-react";
 
 /* ==========================================================
-        TRUST DATA
+                STATS
 ========================================================== */
 
-const trustData = [
+const stats = [
 
-  {
-    id: 1,
-    icon: <Briefcase size={26} />,
-    number: "120+",
-    title: "Projects Delivered",
-  },
+    {
+        id:1,
+        number:"120+",
+        title:"Projects Delivered",
+        icon:<BriefcaseBusiness size={24}/>
+    },
 
-  {
-    id: 2,
-    icon: <Users size={26} />,
-    number: "95%",
-    title: "Client Satisfaction",
-  },
+    {
+        id:2,
+        number:"95%",
+        title:"Client Satisfaction",
+        icon:<ShieldCheck size={24}/>
+    },
 
-  {
-    id: 3,
-    icon: <ShieldCheck size={26} />,
-    number: "24/7",
-    title: "Dedicated Support",
-  },
+    {
+        id:3,
+        number:"24/7",
+        title:"Support",
+        icon:<Rocket size={24}/>
+    },
 
-  {
-    id: 4,
-    icon: <Trophy size={26} />,
-    number: "100%",
-    title: "Commitment",
-  },
+    {
+        id:4,
+        number:"100%",
+        title:"Commitment",
+        icon:<Layers3 size={24}/>
+    }
+
+];
+
+/* ==========================================================
+                FLOATING CARDS
+========================================================== */
+
+const floatingCards = [
+
+    {
+        id:1,
+        icon:<Bot size={22}/>,
+        title:"AI Solutions",
+        description:"Intelligent automation powered by AI."
+    },
+
+    {
+        id:2,
+        icon:<Globe size={22}/>,
+        title:"Web Development",
+        description:"Modern websites built for performance."
+    },
+
+    {
+        id:3,
+        icon:<MonitorSmartphone size={22}/>,
+        title:"UI / UX Design",
+        description:"Beautiful digital experiences that convert."
+    }
 
 ];
 
 function AboutHero() {
 
-    return (
+        return (
 
-        <section className="about-page-hero">
+        <section className="ab-hero-section">
 
-            {/* =====================================
+            {/* ======================================
                     Background
-            ====================================== */}
+            ======================================= */}
 
-            <div className="about-page-grid"></div>
+            <div className="ab-hero-grid"></div>
 
-            <div className="about-page-glow"></div>
+            <div className="ab-hero-glow"></div>
 
-            {/* =====================================
+            <div className="ab-hero-overlay"></div>
+
+            {/* ======================================
                     Container
-            ====================================== */}
+            ======================================= */}
 
-            <div className="about-page-container">
+            <div className="ab-hero-container">
 
-                {/* =====================================
+                {/* ======================================
                         LEFT
-                ====================================== */}
+                ======================================= */}
 
-                <div className="about-page-left">
+                <div className="ab-hero-left">
 
                     {/* Breadcrumb */}
 
-                    <div className="about-page-breadcrumb">
+                    <div className="ab-hero-breadcrumb">
 
-                        <Link to="/">Home</Link>
+                        <Link to="/">
 
-                        <ChevronRight size={15}/>
+                            Home
 
-                        <span>About</span>
+                        </Link>
 
-                    </div>
-
-                    {/* Badge */}
-
-                    <div className="about-page-badge">
-
-                        <Sparkles size={16}/>
+                        <ChevronRight size={16}/>
 
                         <span>
 
-                            COMPANY STORY
+                            About
 
                         </span>
 
                     </div>
 
+                    {/* Badge */}
+
+                    <div className="ab-hero-badge">
+
+                        <Sparkles size={16}/>
+
+                        <span>
+
+                            ABOUT ELVORIN TECHNOLOGIES
+
+                        </span>
+
+                    </div>
+
+                    {/* Small Title */}
+
+                    <h5 className="ab-hero-subtitle">
+
+                        COMPANY STORY
+
+                    </h5>
+
                     {/* Heading */}
 
-                    <h1>
-
-                        Engineering
+                    <h1 className="ab-hero-heading">
 
                         <span>
 
@@ -114,33 +162,31 @@ function AboutHero() {
 
                         Digital Experiences
 
-                        <br/>
+                        That Inspire
 
-                        That Create
-
-                        Lasting Impact.
+                        Innovation.
 
                     </h1>
 
                     {/* Description */}
 
-                    <p>
+                    <p className="ab-hero-description">
 
-                        At Elvorin Technologies, we transform ideas
-                        into premium digital experiences through
-                        innovative web development, AI-powered
-                        solutions, automation, and modern technology
-                        that helps businesses grow confidently.
+                        Elvorin Technologies delivers premium websites,
+                        AI-powered solutions, automation systems,
+                        and digital products designed to help ambitious
+                        businesses scale faster with innovation,
+                        performance, and exceptional user experiences.
 
                     </p>
 
                     {/* Buttons */}
 
-                    <div className="about-page-buttons">
+                    <div className="ab-hero-buttons">
 
                         <Link
                             to="/contact"
-                            className="about-page-btn-primary"
+                            className="ab-hero-btn-primary"
                         >
 
                             Start Your Project
@@ -151,7 +197,7 @@ function AboutHero() {
 
                         <Link
                             to="/services"
-                            className="about-page-btn-secondary"
+                            className="ab-hero-btn-secondary"
                         >
 
                             Explore Services
@@ -162,60 +208,58 @@ function AboutHero() {
 
                 </div>
 
-                {/* =====================================
+                {/* ======================================
                         RIGHT
-                ====================================== */}
+                ======================================= */}
 
-                <div className="about-page-right">
+                <div className="ab-hero-right">
 
-                    {/* Main Visual */}
+                    {/* AI Orb */}
 
-                    <div className="about-page-image">
+                    <div className="ab-hero-orb">
 
-                        <img
-                            src="/images/about-hero.webp"
-                            alt="Elvorin Technologies"
-                        />
+                        <div className="ab-hero-orb-core"></div>
 
-                    </div>
+                        <div className="ab-hero-ring"></div>
 
-                    {/* Floating Card 1 */}
-
-                    <div className="about-page-card card-one">
-
-                        <h3>
-
-                            AI Solutions
-
-                        </h3>
-
-                        <p>
-
-                            Smart automation &
-                            intelligent workflows.
-
-                        </p>
+                        <div className="ab-hero-ring ring-two"></div>
 
                     </div>
 
-                    {/* Floating Card 2 */}
+                    {/* Floating Cards */}
 
-                    <div className="about-page-card card-two">
+                    {
 
-                        <h3>
+                        floatingCards.map((card)=>(
 
-                            Web Excellence
+                            <div
+                                key={card.id}
+                                className={`ab-hero-card ab-card-${card.id}`}
+                            >
 
-                        </h3>
+                                <div className="ab-hero-card-icon">
 
-                        <p>
+                                    {card.icon}
 
-                            Modern websites built
-                            for speed & growth.
+                                </div>
 
-                        </p>
+                                <h4>
 
-                    </div>
+                                    {card.title}
+
+                                </h4>
+
+                                <p>
+
+                                    {card.description}
+
+                                </p>
+
+                            </div>
+
+                        ))
+
+                    }
 
                 </div>
 
