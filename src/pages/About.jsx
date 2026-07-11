@@ -1,5 +1,5 @@
-import AboutHero from "./about-page-components/AboutHero";
-import CompanyOverview from "./about-page-components/CompanyOverview";
+import AboutHero from "./About-page-components/AboutHero";
+import CompanyOverview from "./About-page-components/CompanyOverview";
 
 function About() {
   return (
