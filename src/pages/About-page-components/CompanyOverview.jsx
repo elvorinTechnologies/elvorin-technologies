@@ -300,7 +300,7 @@ function CompanyOverview() {
                         FOOTER
                 ======================================= */}
 
-                <div className="ab-com-overview-footer">
+                {/* <div className="ab-com-overview-footer">
 
                     <span>
 
@@ -326,7 +326,7 @@ function CompanyOverview() {
 
                     </span>
 
-                </div>
+                </div> */}
 
             </div>
 
