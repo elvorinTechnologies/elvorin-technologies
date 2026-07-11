@@ -241,7 +241,7 @@ function Footer() {
                         CTA STRIP
                 ========================================== */}
 
-                <div
+                {/* <div
                     className="elv-footer-cta"
                     data-aos="fade-up"
                 >
@@ -279,7 +279,7 @@ function Footer() {
 
                     </button>
 
-                </div>
+                </div> */}
 
                 {/* ==========================================
                         MAIN FOOTER
