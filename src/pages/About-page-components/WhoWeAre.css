@@ -1,0 +1,987 @@
+/* ==========================================================
+                    WHO WE ARE
+========================================================== */
+
+.ab-who-section{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:60px 0;
+
+    background:#050816;
+
+}
+
+/* ==========================================================
+                    BACKGROUND GRID
+========================================================== */
+
+.ab-who-grid{
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:1;
+
+    opacity:.35;
+
+    background-image:
+
+    linear-gradient(
+    rgba(255,255,255,.05) 1px,
+    transparent 1px),
+
+    linear-gradient(
+    90deg,
+    rgba(255,255,255,.05) 1px,
+    transparent 1px);
+
+    background-size:70px 70px;
+
+}
+
+/* ==========================================================
+                    GLOW
+========================================================== */
+
+.ab-who-glow{
+
+    position:absolute;
+
+    top:-220px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:900px;
+
+    height:900px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(
+
+        circle,
+
+        rgba(59,130,246,.20),
+
+        rgba(37,99,235,.08),
+
+        transparent 72%
+
+    );
+
+    filter:blur(120px);
+
+    z-index:1;
+
+}
+
+/* ==========================================================
+                    CONTAINER
+========================================================== */
+
+.ab-who-container{
+
+    position:relative;
+
+    z-index:5;
+
+    width:90%;
+
+    max-width:1280px;
+
+    margin:auto;
+
+}
+
+/* ==========================================================
+                    HEADER
+========================================================== */
+
+.ab-who-header{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    max-width:760px;
+
+    margin:0 auto 90px;
+
+}
+
+/* ==========================================================
+                    BASE TIMELINE
+========================================================== */
+
+.ab-who-timeline{
+
+    position:relative;
+
+    width:100%;
+
+    max-width:950px;
+
+    margin:0 auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:70px;
+
+}
+/* ==========================================================
+                    BREADCRUMB
+========================================================== */
+
+.ab-who-breadcrumb{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:24px;
+
+    font-family:"Inter",sans-serif;
+
+    font-size:14px;
+
+    color:#94A3B8;
+
+}
+
+.ab-who-breadcrumb a{
+
+    color:#CBD5E1;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.ab-who-breadcrumb a:hover{
+
+    color:#3B82F6;
+
+}
+
+.ab-who-breadcrumb span{
+
+    color:#64748B;
+
+}
+
+/* ==========================================================
+                    GLASS BADGE
+========================================================== */
+
+.ab-who-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:10px 18px;
+
+    margin-bottom:28px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    color:#3B82F6;
+
+    font-family:"Inter",sans-serif;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    letter-spacing:1.5px;
+
+    text-transform:uppercase;
+
+}
+
+/* ==========================================================
+                    TITLE
+========================================================== */
+
+.ab-who-title{
+
+    font-family:"Roboto",sans-serif;
+
+    font-size:clamp(42px,6vw,68px);
+
+    font-weight:700;
+
+    line-height:1.1;
+
+    color:#FFFFFF;
+
+    margin-bottom:28px;
+
+}
+
+.ab-who-title span{
+
+    display:block;
+
+    margin-top:8px;
+
+    background:linear-gradient(
+
+        90deg,
+
+        #3B82F6,
+
+        #60A5FA,
+
+        #93C5FD
+
+    );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    background-clip:text;
+
+}
+
+/* ==========================================================
+                    DESCRIPTION
+========================================================== */
+
+.ab-who-description{
+
+    max-width:700px;
+
+    font-family:"Inter",sans-serif;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#94A3B8;
+
+}
+
+/* ==========================================================
+                    TIMELINE LINE
+========================================================== */
+
+.ab-who-line{
+
+    position:absolute;
+
+    left:28px;
+
+    top:0;
+
+    bottom:0;
+
+    width:2px;
+
+    background:linear-gradient(
+
+        to bottom,
+
+        rgba(59,130,246,.15),
+
+        rgba(59,130,246,.8),
+
+        rgba(59,130,246,.15)
+
+    );
+
+}
+
+/* ==========================================================
+                    TIMELINE ITEM
+========================================================== */
+
+.ab-who-item{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:34px;
+
+}
+
+/* ==========================================================
+                    TIMELINE DOT
+========================================================== */
+
+.ab-who-dot{
+
+    position:relative;
+
+    z-index:5;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:50%;
+
+    background:rgba(59,130,246,.12);
+
+    border:1px solid rgba(59,130,246,.35);
+
+    backdrop-filter:blur(20px);
+
+    color:#60A5FA;
+
+    flex-shrink:0;
+
+}
+
+/* ==========================================================
+                    GLASS CARD
+========================================================== */
+
+.ab-who-card{
+
+    flex:1;
+
+    padding:34px;
+
+    border-radius:24px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.04);
+
+    backdrop-filter:blur(25px);
+
+    -webkit-backdrop-filter:blur(25px);
+
+}
+
+/* ==========================================================
+                    CARD NUMBER
+========================================================== */
+
+.ab-who-card-number{
+
+    font-family:"Roboto",sans-serif;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    color:#3B82F6;
+
+    letter-spacing:2px;
+
+    margin-bottom:16px;
+
+}
+
+/* ==========================================================
+                    CARD TITLE
+========================================================== */
+
+.ab-who-card-title{
+
+    font-family:"Roboto",sans-serif;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#FFFFFF;
+
+    margin-bottom:18px;
+
+}
+
+/* ==========================================================
+                    CARD DESCRIPTION
+========================================================== */
+
+.ab-who-card-description{
+
+    font-family:"Inter",sans-serif;
+
+    font-size:17px;
+
+    line-height:1.9;
+
+    color:#94A3B8;
+
+}
+
+/* ==========================================================
+                    CARD HOVER
+========================================================== */
+
+.ab-who-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    transition:
+
+    transform .45s ease,
+
+    border-color .45s ease,
+
+    box-shadow .45s ease,
+
+    background .45s ease;
+
+}
+
+.ab-who-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:24px;
+
+    padding:1px;
+
+    background:linear-gradient(
+
+        135deg,
+
+        rgba(59,130,246,.65),
+
+        rgba(96,165,250,.15),
+
+        transparent,
+
+        rgba(59,130,246,.45)
+
+    );
+
+    -webkit-mask:
+
+    linear-gradient(#fff 0 0) content-box,
+
+    linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite:xor;
+
+    mask-composite:exclude;
+
+    opacity:0;
+
+    transition:.45s;
+
+}
+
+.ab-who-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:rgba(59,130,246,.35);
+
+    background:rgba(255,255,255,.06);
+
+    box-shadow:
+
+    0 20px 60px rgba(59,130,246,.18);
+
+}
+
+.ab-who-card:hover::before{
+
+    opacity:1;
+
+}
+
+/* ==========================================================
+                    CARD TITLE
+========================================================== */
+
+.ab-who-card-title{
+
+    transition:.35s;
+
+}
+
+.ab-who-card:hover .ab-who-card-title{
+
+    color:#60A5FA;
+
+}
+
+/* ==========================================================
+                    TIMELINE DOT
+========================================================== */
+
+.ab-who-dot{
+
+    transition:
+
+    transform .35s ease,
+
+    box-shadow .35s ease,
+
+    background .35s ease;
+
+    animation:abWhoPulse 3s infinite;
+
+}
+
+.ab-who-item:hover .ab-who-dot{
+
+    transform:scale(1.08);
+
+    background:rgba(59,130,246,.18);
+
+    box-shadow:
+
+    0 0 30px rgba(59,130,246,.45);
+
+}
+
+/* ==========================================================
+                    FLOATING ANIMATION
+========================================================== */
+
+.ab-who-item:nth-child(2){
+
+    animation:abWhoFloat 5s ease-in-out infinite;
+
+}
+
+.ab-who-item:nth-child(3){
+
+    animation:abWhoFloat 5s ease-in-out infinite .5s;
+
+}
+
+.ab-who-item:nth-child(4){
+
+    animation:abWhoFloat 5s ease-in-out infinite 1s;
+
+}
+
+/* ==========================================================
+                    CTA
+========================================================== */
+
+.ab-who-cta{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-top:80px;
+
+}
+
+.ab-who-button{
+
+     display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:18px 34px;
+
+    border-radius:60px;
+
+    text-decoration:none;
+
+    font-family:'Inter',sans-serif;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#FFFFFF;
+
+    background:linear-gradient(
+
+        135deg,
+
+        #3B82F6,
+
+        #2563EB
+
+    );
+
+    box-shadow:
+
+    0 20px 45px rgba(37,99,235,.35);
+
+    transition:.35s ease;
+
+}
+
+.ab-who-button:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+
+    0 28px 60px rgba(37,99,235,.45);
+
+}
+
+/* ==========================================================
+                    ANIMATIONS
+========================================================== */
+
+@keyframes abWhoFloat{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes abWhoPulse{
+
+    0%{
+
+        box-shadow:0 0 0 rgba(59,130,246,0);
+
+    }
+
+    50%{
+
+        box-shadow:0 0 22px rgba(59,130,246,.35);
+
+    }
+
+    100%{
+
+        box-shadow:0 0 0 rgba(59,130,246,0);
+
+    }
+
+}
+
+/* ==========================================================
+                    LAPTOP
+========================================================== */
+
+@media (max-width:1200px){
+
+    .ab-who-container{
+
+        width:92%;
+
+    }
+
+    .ab-who-title{
+
+        font-size:56px;
+
+    }
+
+}
+
+/* ==========================================================
+                    TABLET
+========================================================== */
+
+@media (max-width:992px){
+
+    .ab-who-header{
+
+        margin-bottom:70px;
+
+    }
+
+    .ab-who-title{
+
+        font-size:48px;
+
+    }
+
+    .ab-who-description{
+
+        font-size:17px;
+
+    }
+
+    .ab-who-line{
+
+        left:24px;
+
+    }
+
+    .ab-who-item{
+
+        gap:26px;
+
+    }
+
+    .ab-who-card{
+
+        padding:28px;
+
+    }
+
+}
+
+/* ==========================================================
+                    MOBILE
+========================================================== */
+
+@media (max-width:768px){
+
+    .ab-who-section{
+
+        padding:60px 0;
+
+    }
+
+    .ab-who-header{
+
+        align-items:center;
+
+        text-align:left;
+
+        margin-bottom:55px;
+
+    }
+
+    .ab-who-title{
+
+        font-size:38px;
+
+    }
+
+    .ab-who-description{
+
+        font-size:16px;
+
+        line-height:1.8;
+
+    }
+
+    .ab-who-breadcrumb{
+
+        flex-wrap:wrap;
+
+    }
+
+    .ab-who-badge{
+
+        padding:9px 16px;
+
+        font-size:12px;
+
+    }
+
+    .ab-who-line{
+
+        left:21px;
+
+    }
+
+    .ab-who-item{
+
+        gap:20px;
+
+        align-items:flex-start;
+
+    }
+
+    .ab-who-dot{
+
+        width:44px;
+
+        height:44px;
+
+    }
+
+    .ab-who-dot svg{
+
+        width:18px;
+
+        height:18px;
+
+    }
+
+    .ab-who-card{
+
+        padding:24px;
+
+        border-radius:20px;
+
+    }
+
+    .ab-who-card-title{
+
+        font-size:24px;
+
+    }
+
+    .ab-who-card-description{
+
+        font-size:15px;
+
+        line-height:1.8;
+        text-align: center;
+
+    }
+
+    .ab-who-button{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+}
+
+/* ==========================================================
+                    SMALL MOBILE
+========================================================== */
+
+@media (max-width:480px){
+
+    .ab-who-container{
+
+        width:94%;
+
+    }
+
+    .ab-who-title{
+
+        font-size:32px;
+
+    }
+
+    .ab-who-description{
+
+        font-size:15px;
+        text-align: center;
+
+    }
+
+    .ab-who-card{
+
+        padding:20px;
+
+    }
+
+    .ab-who-card-title{
+
+        font-size:21px;
+
+    }
+
+    .ab-who-card-number{
+
+        font-size:12px;
+
+    }
+
+    .ab-who-line{
+
+        left:18px;
+
+    }
+
+    .ab-who-dot{
+
+        width:38px;
+
+        height:38px;
+
+    }
+
+}
+
+/* ==========================================================
+                    PERFORMANCE
+========================================================== */
+
+.ab-who-card,
+
+.ab-who-dot,
+
+.ab-who-button{
+
+    will-change:transform;
+
+    transform:translateZ(0);
+
+    backface-visibility:hidden;
+
+}
+
+.ab-who-grid,
+
+.ab-who-glow{
+
+    pointer-events:none;
+
+}
+
+.ab-who-card img{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+}
