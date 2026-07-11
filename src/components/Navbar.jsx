@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import {
     HiBars3,
     HiXMark,
-    HiChevronDown,
 } from "react-icons/hi2";
 
 import Logo from "../assets/images/nav-icon.png";
@@ -16,8 +15,6 @@ function Navbar() {
     =============================== */
 
     const [mobileMenu, setMobileMenu] = useState(false);
-
-    const [servicesOpen, setServicesOpen] = useState(false);
 
     const [navbarScrolled, setNavbarScrolled] = useState(false);
 
@@ -74,8 +71,6 @@ function Navbar() {
 
         setMobileMenu(false);
 
-        setServicesOpen(false);
-
     };
 
     /* ===============================
@@ -118,117 +113,13 @@ function Navbar() {
                         About
                     </NavLink>
 
-                    {/* ===============================
-                SERVICES MEGA MENU
-          =============================== */}
-
-                    <div
-                        className="mega-parent"
-                        onMouseEnter={() => setServicesOpen(true)}
-                        onMouseLeave={() => setServicesOpen(false)}
-                    >
-
-                        <button className="mega-trigger">
-
-                            <span>Services</span>
-
-                            <HiChevronDown
-                                className={
-                                    servicesOpen
-                                        ? "rotate"
-                                        : ""
-                                }
-                            />
-
-                        </button>
-
-                        <div
-                            className={
-                                servicesOpen
-                                    ? "mega-menu active"
-                                    : "mega-menu"
-                            }
-                        >
-
-                            {/* Column 1 */}
-
-                            <div className="mega-column">
-
-                                <h4>Development</h4>
-
-                                <NavLink to="/services/web-development">
-                                    Website Development
-                                </NavLink>
-
-                                <NavLink to="/services/wordpress">
-                                    WordPress Development
-                                </NavLink>
-
-                                <NavLink to="/services/ecommerce">
-                                    E-Commerce
-                                </NavLink>
-
-                                <NavLink to="/services/web-app">
-                                    Web Applications
-                                </NavLink>
-
-                            </div>
-
-                            {/* Column 2 */}
-
-                            <div className="mega-column">
-
-                                <h4>AI Solutions</h4>
-
-                                <NavLink to="/services/ai-chatbot">
-                                    AI Chatbot
-                                </NavLink>
-
-                                <NavLink to="/services/automation">
-                                    Workflow Automation
-                                </NavLink>
-
-                                <NavLink to="/services/api">
-                                    API Integration
-                                </NavLink>
-
-                                <NavLink to="/services/consulting">
-                                    AI Consulting
-                                </NavLink>
-
-                            </div>
-
-                            {/* Column 3 */}
-
-                            <div className="mega-column">
-
-                                <h4>Marketing</h4>
-
-                                <NavLink to="/services/seo">
-                                    SEO
-                                </NavLink>
-
-                                <NavLink to="/services/google-ads">
-                                    Google Ads
-                                </NavLink>
-
-                                <NavLink to="/services/social-media">
-                                    Social Media Marketing
-                                </NavLink>
-
-                                <NavLink to="/services/branding">
-                                    Branding
-                                </NavLink>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <NavLink to="/portfolio">
-                        Portfolio
+                    <NavLink to="/services">
+                        Services
                     </NavLink>
+
+                    {/* <NavLink to="/portfolio">
+                        Portfolio
+                    </NavLink> */}
 
                     <NavLink to="/contact">
                         Contact
@@ -326,103 +217,19 @@ function Navbar() {
                         About
                     </NavLink>
 
-                    {/* ===============================
-              MOBILE SERVICES
-        =============================== */}
-
-                    <div className="mobile-services">
-
-                        <button
-                            className="mobile-service-btn"
-                            onClick={() =>
-                                setServicesOpen(!servicesOpen)
-                            }
-                        >
-
-                            <span>Services</span>
-
-                            <HiChevronDown
-                                className={
-                                    servicesOpen ? "rotate" : ""
-                                }
-                            />
-
-                        </button>
-
-                        <div
-                            className={
-                                servicesOpen
-                                    ? "mobile-submenu open"
-                                    : "mobile-submenu"
-                            }
-                        >
-
-                            <NavLink
-                                to="/services/web-development"
-                                onClick={closeMenu}
-                            >
-                                Website Development
-                            </NavLink>
-
-                            <NavLink
-                                to="/services/wordpress"
-                                onClick={closeMenu}
-                            >
-                                WordPress Development
-                            </NavLink>
-
-                            <NavLink
-                                to="/services/ecommerce"
-                                onClick={closeMenu}
-                            >
-                                E-Commerce Development
-                            </NavLink>
-
-                            <NavLink
-                                to="/services/web-app"
-                                onClick={closeMenu}
-                            >
-                                Web Applications
-                            </NavLink>
-
-                            <NavLink
-                                to="/services/ai-chatbot"
-                                onClick={closeMenu}
-                            >
-                                AI Chatbot
-                            </NavLink>
-
-                            <NavLink
-                                to="/services/automation"
-                                onClick={closeMenu}
-                            >
-                                Workflow Automation
-                            </NavLink>
-
-                            <NavLink
-                                to="/services/api"
-                                onClick={closeMenu}
-                            >
-                                API Integration
-                            </NavLink>
-
-                            <NavLink
-                                to="/services/seo"
-                                onClick={closeMenu}
-                            >
-                                SEO
-                            </NavLink>
-
-                        </div>
-
-                    </div>
-
                     <NavLink
+                        to="/services"
+                        onClick={closeMenu}
+                    >
+                        Services
+                    </NavLink>
+
+                    {/* <NavLink
                         to="/portfolio"
                         onClick={closeMenu}
                     >
                         Portfolio
-                    </NavLink>
+                    </NavLink> */}
 
                     <NavLink
                         to="/contact"
