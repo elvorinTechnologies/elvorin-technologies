@@ -535,7 +535,7 @@
                     NODE POSITIONS
 ========================================================== */
 
-.node-1{
+.nodes-1{
 
     top:30px;
 
@@ -545,7 +545,7 @@
 
 }
 
-.node-2{
+.nodes-2{
 
     top:180px;
 
@@ -553,7 +553,7 @@
 
 }
 
-.node-3{
+.nodes-3{
 
     bottom:180px;
 
@@ -561,7 +561,7 @@
 
 }
 
-.node-4{
+.nodes-4{
 
     bottom:30px;
 
@@ -571,7 +571,7 @@
 
 }
 
-.node-5{
+.nodes-5{
 
     bottom:180px;
 
@@ -579,7 +579,7 @@
 
 }
 
-.node-6{
+.nodes-6{
 
     top:180px;
 
@@ -663,25 +663,25 @@
                     FLOAT ANIMATION
 ========================================================== */
 
-.node-1{
+.nodes-1{
 
     animation:abComFloatOne 6s ease-in-out infinite;
 
 }
 
-.node-2{
+.nodes-2{
 
     animation:abComFloatTwo 7s ease-in-out infinite;
 
 }
 
-.node-3{
+.nodes-3{
 
     animation:abComFloatThree 8s ease-in-out infinite;
 
 }
 
-.node-4{
+.nodes-4{
 
     animation:abComFloatFour 6.5s ease-in-out infinite;
 

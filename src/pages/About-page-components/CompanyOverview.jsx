@@ -260,31 +260,31 @@ function CompanyOverview() {
 
                     {
 
-                        overviewNodes.map((node)=>(
+                        overviewNodes.map((nodes)=>(
 
                             <div
 
-                                key={node.id}
+                                key={nodes.id}
 
-                                className={`ab-com-overview-node node-${node.id}`}
+                                className={`ab-com-overview-node nodes-${nodes.id}`}
 
                             >
 
                                 <div className="ab-com-overview-node-icon">
 
-                                    {node.icon}
+                                    {nodes.icon}
 
                                 </div>
 
                                 <h4>
 
-                                    {node.title}
+                                    {nodes.title}
 
                                 </h4>
 
                                 <p>
 
-                                    {node.description}
+                                    {nodes.description}
 
                                 </p>
 

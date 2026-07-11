@@ -1,0 +1,963 @@
+/* ==========================================================
+                    CORE VALUES SECTION
+========================================================== */
+
+.ab-values-section{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:60px 0;
+
+    background:#050816;
+
+}
+
+/* ==========================================================
+                    GRID BACKGROUND
+========================================================== */
+
+.ab-values-grid{
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:1;
+
+    opacity:.35;
+
+    background-image:
+
+    linear-gradient(
+        rgba(255,255,255,.05) 1px,
+        transparent 1px
+    ),
+
+    linear-gradient(
+        90deg,
+        rgba(255,255,255,.05) 1px,
+        transparent 1px
+    );
+
+    background-size:70px 70px;
+
+}
+
+/* ==========================================================
+                    BLUE GLOW
+========================================================== */
+
+.ab-values-glow{
+
+    position:absolute;
+
+    top:-250px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:900px;
+
+    height:900px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(
+
+        circle,
+
+        rgba(59,130,246,.20),
+
+        rgba(37,99,235,.08),
+
+        transparent 72%
+
+    );
+
+    filter:blur(120px);
+
+    z-index:1;
+
+}
+
+/* ==========================================================
+                    CONTAINER
+========================================================== */
+
+.ab-values-container{
+
+    position:relative;
+
+    z-index:5;
+
+    width:90%;
+
+    max-width:1320px;
+
+    margin:auto;
+
+}
+
+/* ==========================================================
+                    HEADER
+========================================================== */
+
+.ab-values-header{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    max-width:760px;
+
+    margin:0 auto 40px;
+
+}
+
+/* ==========================================================
+                    BASE NETWORK
+========================================================== */
+
+.ab-values-network{
+
+    position:relative;
+
+    width:100%;
+
+    max-width:1100px;
+
+    height:760px;
+
+    margin:auto;
+
+}
+
+/* ==========================================================
+                    SVG
+========================================================== */
+
+.ab-values-svg{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    z-index:1;
+
+    pointer-events:none;
+
+}
+
+.ab-values-svg line{
+
+    stroke:rgba(59,130,246,.18);
+
+    stroke-width:2;
+
+    stroke-linecap:round;
+
+}
+
+/* ==========================================================
+                    CENTER
+========================================================== */
+
+.ab-values-center{
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    z-index:10;
+
+}
+
+/* ==========================================================
+                    BASE VALUE CARD
+========================================================== */
+
+.ab-values-card{
+
+    position:absolute;
+
+    width:240px;
+
+    min-height:180px;
+
+    z-index:5;
+
+}
+/* ==========================================================
+                    BREADCRUMB
+========================================================== */
+
+.ab-values-breadcrumb{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    margin-bottom:22px;
+
+    font-family:"Inter",sans-serif;
+
+    font-size:14px;
+
+    color:#94A3B8;
+
+}
+
+.ab-values-breadcrumb a{
+
+    text-decoration:none;
+
+    color:#CBD5E1;
+
+    transition:.35s;
+
+}
+
+.ab-values-breadcrumb a:hover{
+
+    color:#3B82F6;
+
+}
+
+.ab-values-breadcrumb span{
+
+    color:#64748B;
+
+}
+
+/* ==========================================================
+                    GLASS BADGE
+========================================================== */
+
+.ab-values-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:10px 18px;
+
+    margin-bottom:28px;
+
+    border-radius:999px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    color:#60A5FA;
+
+    font-family:"Inter",sans-serif;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    letter-spacing:1.5px;
+
+    text-transform:uppercase;
+
+}
+
+/* ==========================================================
+                    TITLE
+========================================================== */
+
+.ab-values-title{
+
+    font-family:"Roboto",sans-serif;
+
+    font-size:clamp(42px,6vw,68px);
+
+    font-weight:700;
+
+    line-height:1.08;
+
+    color:#FFFFFF;
+
+    margin-bottom:26px;
+
+}
+
+.ab-values-title span{
+
+    display:block;
+
+    margin-top:10px;
+
+    background:linear-gradient(
+
+        90deg,
+
+        #2563EB,
+
+        #3B82F6,
+
+        #60A5FA
+
+    );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    background-clip:text;
+
+}
+
+/* ==========================================================
+                    DESCRIPTION
+========================================================== */
+
+.ab-values-description{
+
+    max-width:720px;
+
+    font-family:"Inter",sans-serif;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#94A3B8;
+
+}
+
+/* ==========================================================
+                    INFINITY ORB
+========================================================== */
+
+.ab-values-infinity{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    background:rgba(59,130,246,.10);
+
+    border:1px solid rgba(59,130,246,.25);
+
+    backdrop-filter:blur(25px);
+
+    color:#60A5FA;
+
+}
+
+.ab-values-center h3{
+
+    margin-top:24px;
+
+    margin-bottom:8px;
+
+    font-family:"Roboto",sans-serif;
+
+    font-size:32px;
+
+    color:#FFFFFF;
+
+}
+
+.ab-values-center p{
+
+    font-family:"Inter",sans-serif;
+
+    font-size:15px;
+
+    color:#94A3B8;
+
+}
+
+/* ==========================================================
+                    GLASS VALUE CARDS
+========================================================== */
+
+.ab-values-card{
+
+    padding:28px;
+
+    border-radius:22px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.04);
+
+    backdrop-filter:blur(22px);
+
+    -webkit-backdrop-filter:blur(22px);
+
+}
+
+.ab-values-icon{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:60px;
+
+    height:60px;
+
+    margin-bottom:20px;
+
+    border-radius:18px;
+
+    background:rgba(59,130,246,.12);
+
+    border:1px solid rgba(59,130,246,.25);
+
+    color:#60A5FA;
+
+}
+
+.ab-values-card h4{
+
+    font-family:"Roboto",sans-serif;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#FFFFFF;
+
+    margin-bottom:14px;
+
+}
+
+.ab-values-card p{
+
+    font-family:"Inter",sans-serif;
+
+    font-size:15px;
+
+    line-height:1.8;
+
+    color:#94A3B8;
+
+}
+
+/* ==========================================================
+                    INFINITY POSITIONS
+========================================================== */
+
+.node-1{
+
+    top:40px;
+
+    left:120px;
+
+}
+
+.node-2{
+
+    top:40px;
+
+    right:120px;
+
+}
+
+.node-3{
+
+    top:280px;
+
+    left:20px;
+
+}
+
+.node-4{
+
+    top:280px;
+
+    right:20px;
+
+}
+
+.node-5{
+
+    bottom:40px;
+
+    left:120px;
+
+}
+
+.node-6{
+
+    bottom:40px;
+
+    right:120px;
+
+}
+
+/* ==========================================================
+                    SVG
+========================================================== */
+
+.ab-values-svg line{
+
+    stroke:rgba(59,130,246,.22);
+
+    stroke-width:2;
+
+    stroke-linecap:round;
+
+}
+
+/* ==========================================================
+                    QUOTE
+========================================================== */
+
+.ab-values-quote{
+
+    margin-top:30px;
+
+    text-align:center;
+
+}
+
+.ab-values-quote h3{
+
+    font-family:"Roboto",sans-serif;
+
+    font-size:32px;
+
+    font-weight:600;
+
+    color:#FFFFFF;
+
+    line-height:1.4;
+
+    max-width:760px;
+
+    margin:auto;
+
+}
+
+/* ==========================================================
+                    LAPTOP
+========================================================== */
+
+@media (max-width:1200px){
+
+    .ab-values-container{
+
+        width:92%;
+
+    }
+
+    .ab-values-network{
+
+        max-width:960px;
+
+        height:700px;
+
+    }
+
+    .ab-values-card{
+
+        width:220px;
+
+    }
+
+    .node-1{
+
+        left:80px;
+
+    }
+
+    .node-2{
+
+        right:80px;
+
+    }
+
+    .node-5{
+
+        left:80px;
+
+    }
+
+    .node-6{
+
+        right:80px;
+
+    }
+
+}
+
+/* ==========================================================
+                    TABLET
+========================================================== */
+
+@media (max-width:992px){
+
+    .ab-values-header{
+
+        margin-bottom:70px;
+
+    }
+
+    .ab-values-title{
+
+        font-size:48px;
+
+    }
+
+    .ab-values-description{
+
+        font-size:17px;
+
+    }
+
+    .ab-values-network{
+
+        display:grid;
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:28px;
+
+        height:auto;
+
+        max-width:760px;
+
+    }
+
+    .ab-values-center{
+
+        position:relative;
+
+        grid-column:1/-1;
+
+        top:auto;
+
+        left:auto;
+
+        transform:none;
+
+        margin-bottom:20px;
+
+    }
+
+    .ab-values-card{
+
+        position:relative;
+
+        width:100%;
+
+        top:auto;
+
+        right:auto;
+
+        bottom:auto;
+
+        left:auto;
+
+    }
+
+    .ab-values-svg{
+
+        display:none;
+
+    }
+
+}
+
+/* ==========================================================
+                    MOBILE
+========================================================== */
+
+@media (max-width:768px){
+
+    .ab-values-section{
+
+        padding:60px 0;
+
+    }
+
+    .ab-values-container{
+
+        width:94%;
+
+    }
+
+    .ab-values-header{
+
+        align-items:center;
+
+        text-align:left;
+
+        margin-bottom:55px;
+
+    }
+
+    .ab-values-title{
+
+        font-size:36px;
+        text-align: center;
+
+    }
+
+    .ab-values-description{
+
+        font-size:16px;
+
+        line-height:1.8;
+        text-align: center;
+
+    }
+
+    .ab-values-breadcrumb{
+
+        justify-content:flex-start;
+
+        flex-wrap:wrap;
+
+    }
+
+    .ab-values-network{
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+    .ab-values-center{
+
+        margin-bottom:30px;
+
+    }
+
+    .ab-values-infinity{
+
+        width:90px;
+
+        height:90px;
+
+    }
+
+    .ab-values-center h3{
+
+        font-size:26px;
+
+    }
+
+    .ab-values-card{
+
+        width:100%;
+
+        padding:24px;
+
+        min-height:auto;
+
+    }
+
+    .ab-values-icon{
+
+        width:54px;
+
+        height:54px;
+
+    }
+
+    .ab-values-card h4{
+
+        font-size:22px;
+
+    }
+
+    .ab-values-card p{
+
+        font-size:15px;
+
+    }
+
+    .ab-values-quote{
+
+        margin-top:60px;
+
+    }
+
+    .ab-values-quote h3{
+
+        font-size:26px;
+
+    }
+
+}
+
+/* ==========================================================
+                    SMALL MOBILE
+========================================================== */
+
+@media (max-width:480px){
+
+    .ab-values-title{
+
+        font-size:30px;
+
+    }
+
+    .ab-values-description{
+
+        font-size:15px;
+
+    }
+
+    .ab-values-infinity{
+
+        width:80px;
+
+        height:80px;
+
+    }
+
+    .ab-values-center h3{
+
+        font-size:22px;
+
+    }
+
+    .ab-values-center p{
+
+        font-size:14px;
+
+    }
+
+    .ab-values-card{
+
+        padding:20px;
+
+        border-radius:18px;
+
+    }
+
+    .ab-values-icon{
+
+        width:48px;
+
+        height:48px;
+
+        border-radius:14px;
+
+    }
+
+    .ab-values-icon svg{
+
+        width:20px;
+
+        height:20px;
+
+    }
+
+    .ab-values-card h4{
+
+        font-size:20px;
+
+    }
+
+    .ab-values-card p{
+
+        font-size:14px;
+
+        line-height:1.7;
+
+    }
+
+    .ab-values-quote h3{
+
+        font-size:22px;
+
+    }
+
+}
+
+/* ==========================================================
+                    PERFORMANCE
+========================================================== */
+
+.ab-values-card,
+
+.ab-values-infinity,
+
+.ab-values-icon{
+
+    will-change:transform;
+
+    transform:translateZ(0);
+
+    backface-visibility:hidden;
+
+}
+
+.ab-values-grid,
+
+.ab-values-glow,
+
+.ab-values-svg{
+
+    pointer-events:none;
+
+}
+
+.ab-values-card img{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+}
