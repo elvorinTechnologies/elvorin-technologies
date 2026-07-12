@@ -203,29 +203,7 @@ function ContactHero() {
 
                             />
 
-                            <div className="contpage-floating-card card-one">
-
-                                AI Solutions
-
-                            </div>
-
-                            <div className="contpage-floating-card card-two">
-
-                                Web Development
-
-                            </div>
-
-                            <div className="contpage-floating-card card-three">
-
-                                SEO
-
-                            </div>
-
-                            <div className="contpage-floating-card card-four">
-
-                                Automation
-
-                            </div>
+                            
 
                         </div>
 

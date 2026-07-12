@@ -1,4 +1,5 @@
 import "../styles/hero.css";
+import { Link } from "react-router-dom";
 
 import {
   ArrowRight,
@@ -59,7 +60,7 @@ function Hero() {
 
           <div className="hero-buttons">
 
-            <button className="primary-btn">
+            <button className="primary-btn" to="/contact">
 
               Start Your Project
 
@@ -67,13 +68,7 @@ function Hero() {
 
             </button>
 
-            <button className="secondary-btn">
-
-              <Play size={18} />
-
-              View Portfolio
-
-            </button>
+            
 
           </div>
 
