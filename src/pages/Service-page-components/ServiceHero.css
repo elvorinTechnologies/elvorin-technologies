@@ -1,0 +1,878 @@
+/* ==========================================================
+                    SERVICE HERO SECTION
+========================================================== */
+
+.serhero-section{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:100px 0 60px;
+
+    background:#050816;
+
+}
+
+/* ==========================================================
+                    GRID BACKGROUND
+========================================================== */
+
+.serhero-grid{
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:1;
+
+    opacity:.35;
+
+    background-image:
+
+        linear-gradient(
+
+            rgba(255,255,255,.05) 1px,
+
+            transparent 1px
+
+        ),
+
+        linear-gradient(
+
+            90deg,
+
+            rgba(255,255,255,.05) 1px,
+
+            transparent 1px
+
+        );
+
+    background-size:70px 70px;
+
+    pointer-events:none;
+
+}
+
+/* ==========================================================
+                    BLUE GLOW
+========================================================== */
+
+.serhero-glow{
+
+    position:absolute;
+
+    top:-320px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:900px;
+
+    height:900px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+
+            circle,
+
+            rgba(59,130,246,.18),
+
+            rgba(37,99,235,.08),
+
+            transparent 72%
+
+        );
+
+    filter:blur(120px);
+
+    z-index:1;
+
+    pointer-events:none;
+
+}
+
+/* ==========================================================
+                    CONTAINER
+========================================================== */
+
+.serhero-container{
+
+    position:relative;
+
+    z-index:5;
+
+    width:90%;
+
+    max-width:1320px;
+
+    margin:auto;
+
+}
+
+/* ==========================================================
+                    WRAPPER
+========================================================== */
+
+.serhero-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1.05fr .95fr;
+
+    align-items:center;
+
+    gap:70px;
+
+    min-height:650px;
+
+}
+
+/* ==========================================================
+                    LEFT
+========================================================== */
+
+.serhero-left{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+/* ==========================================================
+                    RIGHT
+========================================================== */
+
+.serhero-right{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+
+}
+
+/* ==========================================================
+                    IMAGE WRAPPER
+========================================================== */
+
+.serhero-image-wrapper{
+
+    position:relative;
+
+    width:100%;
+
+    max-width:560px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/* ==========================================================
+                    IMAGE
+========================================================== */
+
+.serhero-image{
+
+    width:100%;
+
+    display:block;
+
+    object-fit:cover;
+
+    position:relative;
+
+    z-index:5;
+
+}
+
+/* ==========================================================
+                    FLOATING CARDS
+========================================================== */
+
+.serhero-floating-card{
+
+    position:absolute;
+
+    z-index:10;
+
+}
+
+.serhero-card-top{
+
+    top:30px;
+
+    left:-25px;
+
+}
+
+.serhero-card-bottom{
+
+    bottom:30px;
+
+    right:-25px;
+
+}
+
+/* ==========================================================
+                    STATS
+========================================================== */
+
+.serhero-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:22px;
+
+    margin-top:45px;
+
+}
+/* ==========================================================
+                    GLASS BADGE
+========================================================== */
+
+.serhero-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    width:max-content;
+
+    padding:10px 22px;
+
+    margin-bottom:28px;
+
+    border-radius:999px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    color:#60A5FA;
+
+}
+
+.serhero-badge span{
+
+    font-family:"Inter",sans-serif;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+}
+
+/* ==========================================================
+                    HEADING
+========================================================== */
+
+.serhero-title{
+
+    margin-bottom:28px;
+
+    color:#FFFFFF;
+
+    font-family:"Roboto",sans-serif;
+
+    font-size:clamp(48px,6vw,72px);
+
+    font-weight:700;
+
+    line-height:1.08;
+
+    letter-spacing:-1.5px;
+
+}
+
+.serhero-title span{
+
+    display:block;
+
+    margin:10px 0;
+
+    background:linear-gradient(
+
+        90deg,
+
+        #60A5FA,
+
+        #2563EB
+
+    );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    background-clip:text;
+
+}
+
+/* ==========================================================
+                    DESCRIPTION
+========================================================== */
+
+.serhero-description{
+
+    max-width:620px;
+
+    color:#94A3B8;
+
+    font-family:"Inter",sans-serif;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+}
+
+/* ==========================================================
+                    STATISTICS CARD
+========================================================== */
+
+.serhero-stat-card{
+
+    padding:24px;
+
+    border-radius:22px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    text-align:center;
+
+}
+
+.serhero-stat-icon{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:54px;
+
+    height:54px;
+
+    margin:0 auto 18px;
+
+    border-radius:16px;
+
+    background:rgba(37,99,235,.12);
+
+    color:#60A5FA;
+
+}
+
+.serhero-stat-card h3{
+
+    margin-bottom:8px;
+
+    color:#FFFFFF;
+
+    font-family:"Roboto",sans-serif;
+
+    font-size:34px;
+
+    font-weight:700;
+
+}
+
+.serhero-stat-card p{
+
+    color:#94A3B8;
+
+    font-family:"Inter",sans-serif;
+
+    font-size:15px;
+
+    line-height:1.7;
+
+}
+
+/* ==========================================================
+                    IMAGE
+========================================================== */
+
+.serhero-image{
+
+    border-radius:26px;
+    height: 600px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.04);
+
+    box-shadow:
+
+        0 30px 70px rgba(0,0,0,.35);
+
+
+}
+
+/* ==========================================================
+                    FLOATING GLASS CARD
+========================================================== */
+
+.serhero-floating-card{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:14px 22px;
+
+    border-radius:18px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.06);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    box-shadow:
+
+        0 12px 30px rgba(0,0,0,.25);
+
+}
+
+.serhero-floating-card span{
+
+    color:#FFFFFF;
+
+    font-family:"Inter",sans-serif;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    white-space:nowrap;
+
+}
+
+/* ==========================================================
+                    TYPOGRAPHY
+========================================================== */
+
+.serhero-title,
+
+.serhero-description,
+
+.serhero-badge,
+
+.serhero-stat-card,
+
+.serhero-floating-card{
+
+    text-rendering:optimizeLegibility;
+
+    -webkit-font-smoothing:antialiased;
+
+    -moz-osx-font-smoothing:grayscale;
+
+}
+
+/* ==========================================================
+                    LARGE LAPTOP
+========================================================== */
+
+@media (max-width:1200px){
+
+    .serhero-container{
+
+        width:92%;
+
+    }
+
+    .serhero-wrapper{
+
+        gap:50px;
+
+    }
+
+    .serhero-title{
+
+        font-size:60px;
+
+    }
+
+    .serhero-image-wrapper{
+
+        max-width:500px;
+
+    }
+
+}
+
+/* ==========================================================
+                    LAPTOP
+========================================================== */
+
+@media (max-width:1024px){
+
+    .serhero-wrapper{
+
+        grid-template-columns:1fr 1fr;
+
+        gap:40px;
+
+    }
+
+    .serhero-title{
+
+        font-size:52px;
+
+    }
+
+    .serhero-description{
+
+        font-size:17px;
+
+    }
+
+    .serhero-stats{
+
+        gap:18px;
+
+    }
+
+}
+
+/* ==========================================================
+                    TABLET
+========================================================== */
+
+@media (max-width:992px){
+
+    .serhero-section{
+
+        padding:110px 0 80px;
+
+    }
+
+    .serhero-wrapper{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+        gap:60px;
+
+    }
+
+    .serhero-left{
+
+        align-items:center;
+
+    }
+
+    .serhero-description{
+
+        max-width:700px;
+
+    }
+
+    .serhero-right{
+
+        order:-1;
+
+    }
+
+    .serhero-stats{
+
+        width:100%;
+
+        max-width:700px;
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+    .serhero-card-top{
+
+        top:15px;
+
+        left:0;
+
+    }
+
+    .serhero-card-bottom{
+
+        right:0;
+
+        bottom:15px;
+
+    }
+
+}
+
+/* ==========================================================
+                    MOBILE
+========================================================== */
+
+@media (max-width:768px){
+
+    .serhero-wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .serhero-section{
+
+        padding:100px 0 40px;
+
+    }
+
+    .serhero-container{
+
+        width:94%;
+
+    }
+
+    .serhero-title{
+
+        font-size:40px;
+
+        line-height:1.2;
+
+    }
+
+    .serhero-description{
+
+        font-size:15px;
+
+        line-height:1.8;
+
+    }
+
+    .serhero-badge{
+
+        padding:9px 18px;
+
+    }
+
+    .serhero-stats{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:16px;
+
+    }
+
+    .serhero-stat-card{
+
+        padding:20px;
+
+    }
+
+    .serhero-image-wrapper{
+
+        max-width:380px;
+
+    }
+
+    .serhero-card-top{
+
+        top:-10px;
+
+        left:10px;
+
+    }
+
+    .serhero-card-bottom{
+
+        right:10px;
+
+        bottom:-10px;
+
+    }
+
+}
+
+/* ==========================================================
+                    SMALL MOBILE
+========================================================== */
+
+@media (max-width:480px){
+
+    .serhero-container{
+
+        width:95%;
+        
+
+    }
+
+    .serhero-title{
+
+        font-size:32px;
+
+    }
+
+    .serhero-description{
+
+        font-size:14px;
+
+    }
+
+    .serhero-badge{
+
+        font-size:11px;
+
+        padding:8px 16px;
+
+    }
+
+    .serhero-stats{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .serhero-stat-card{
+
+        padding:18px;
+
+    }
+
+    .serhero-stat-card h3{
+
+        font-size:28px;
+
+    }
+
+    .serhero-stat-card p{
+
+        font-size:14px;
+
+    }
+
+    .serhero-image-wrapper{
+
+        max-width:100%;
+
+    }
+
+    .serhero-image{
+
+        border-radius:20px;
+
+    }
+
+    .serhero-floating-card{
+
+        padding:10px 16px;
+
+    }
+
+    .serhero-floating-card span{
+
+        font-size:12px;
+
+    }
+
+    .serhero-card-top{
+
+        top:-8px;
+
+        left:5px;
+
+    }
+
+    .serhero-card-bottom{
+
+        right:5px;
+
+        bottom:-8px;
+
+    }
+
+}
+
+/* ==========================================================
+                    ACCESSIBILITY
+========================================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .serhero-image-wrapper,
+
+    .serhero-image,
+
+    .serhero-floating-card,
+
+    .serhero-stat-card,
+
+    .serhero-badge{
+
+        animation:none !important;
+
+        transition:none !important;
+
+    }
+
+}
+
+/* ==========================================================
+                    PERFORMANCE
+========================================================== */
+
+.serhero-grid,
+
+.serhero-glow{
+
+    pointer-events:none;
+
+}
+
+.serhero-wrapper,
+
+.serhero-image-wrapper,
+
+.serhero-image,
+
+.serhero-stat-card,
+
+.serhero-floating-card{
+
+    transform:translateZ(0);
+
+    backface-visibility:hidden;
+
+}

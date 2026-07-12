@@ -1,0 +1,1403 @@
+/* ==========================================================
+                    CONTACT FORM SECTION
+========================================================== */
+
+
+.contform-section{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:100px 0;
+
+    background:#050816;
+
+}
+
+/* ==========================================================
+                    GRID BACKGROUND
+========================================================== */
+
+.contform-grid{
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:1;
+
+    opacity:.35;
+
+    background-image:
+
+        linear-gradient(
+
+            rgba(255,255,255,.05) 1px,
+
+            transparent 1px
+
+        ),
+
+        linear-gradient(
+
+            90deg,
+
+            rgba(255,255,255,.05) 1px,
+
+            transparent 1px
+
+        );
+
+    background-size:70px 70px;
+
+}
+
+/* ==========================================================
+                    BLUE GLOW
+========================================================== */
+
+.contform-glow{
+
+    position:absolute;
+
+    top:-300px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:900px;
+
+    height:900px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+
+            circle,
+
+            rgba(59,130,246,.18),
+
+            rgba(37,99,235,.08),
+
+            transparent 72%
+
+        );
+
+    filter:blur(120px);
+
+    z-index:1;
+
+}
+
+/* ==========================================================
+                    CONTAINER
+========================================================== */
+
+.contform-container{
+
+    position:relative;
+
+    z-index:5;
+
+    width:90%;
+
+    max-width:1320px;
+
+    margin:auto;
+
+}
+
+/* ==========================================================
+                    HEADER
+========================================================== */
+
+.contform-header{
+
+    max-width:760px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+}
+
+/* ==========================================================
+                    WRAPPER
+========================================================== */
+
+.contform-wrapper{
+
+    display:grid;
+
+    grid-template-columns:380px 1fr;
+
+    gap:40px;
+
+    align-items:start;
+
+}
+
+/* ==========================================================
+                    LEFT
+========================================================== */
+
+.contform-left{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+/* ==========================================================
+                    RIGHT
+========================================================== */
+
+.contform-right{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+/* ==========================================================
+                    FORM CARD
+========================================================== */
+
+.contform-form-card{
+
+    width:100%;
+
+}
+
+/* ==========================================================
+                    CONTACT CARD
+========================================================== */
+
+.contform-card{
+
+    width:100%;
+
+}
+
+/* ==========================================================
+                    CONTACT LIST
+========================================================== */
+
+.contform-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+/* ==========================================================
+                    FORM
+========================================================== */
+
+.contform-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+}
+
+/* ==========================================================
+                    ROW
+========================================================== */
+
+.contform-row{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:22px;
+
+}
+
+/* ==========================================================
+                    GROUP
+========================================================== */
+
+.contform-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+/* ==========================================================
+                    SOCIAL
+========================================================== */
+
+.contform-social{
+
+    margin-top:35px;
+
+}
+
+.contform-social-wrapper{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+}
+/* ==========================================================
+                    BADGE
+========================================================== */
+
+.contform-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:10px 22px;
+
+    margin-bottom:22px;
+
+    border-radius:999px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    color:#60A5FA;
+
+    font-family:"Inter",sans-serif;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    letter-spacing:1.4px;
+
+    text-transform:uppercase;
+
+}
+
+/* ==========================================================
+                    TITLE
+========================================================== */
+
+.contform-title{
+
+    margin-bottom:20px;
+
+    color:#FFFFFF;
+
+    font-family:"Roboto",sans-serif;
+
+    font-size:clamp(38px,5vw,58px);
+
+    font-weight:700;
+
+    line-height:1.15;
+
+}
+
+.contform-description{
+
+    max-width:720px;
+
+    margin:auto;
+
+    color:#94A3B8;
+
+    font-family:"Inter",sans-serif;
+
+    font-size:17px;
+
+    line-height:1.9;
+
+}
+
+/* ==========================================================
+                    GLASS CARDS
+========================================================== */
+
+.contform-card,
+
+.contform-form-card{
+
+    padding:36px;
+
+    border-radius:28px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    box-shadow:
+
+        0 20px 60px rgba(0,0,0,.25);
+
+}
+
+/* ==========================================================
+                    CARD TYPOGRAPHY
+========================================================== */
+
+.contform-card h3,
+
+.contform-form-card h3{
+
+    margin-bottom:12px;
+
+    color:#FFFFFF;
+
+    font-family:"Roboto",sans-serif;
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+.contform-card p,
+
+.contform-form-card p{
+
+    margin-bottom:32px;
+
+    color:#94A3B8;
+
+    font-family:"Inter",sans-serif;
+
+    font-size:15px;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================================
+                    CONTACT ITEM
+========================================================== */
+
+.contform-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+    padding:18px;
+
+    border-radius:18px;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    background:rgba(255,255,255,.03);
+
+}
+
+.contform-icon{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:16px;
+
+    background:rgba(37,99,235,.12);
+
+    color:#60A5FA;
+
+    flex-shrink:0;
+
+}
+
+.contform-content h4{
+
+    margin-bottom:6px;
+
+    color:#FFFFFF;
+
+    font-family:"Roboto",sans-serif;
+
+    font-size:17px;
+
+    font-weight:600;
+
+}
+
+.contform-content span{
+
+    color:#94A3B8;
+
+    font-family:"Inter",sans-serif;
+
+    font-size:15px;
+
+    line-height:1.7;
+
+}
+
+/* ==========================================================
+                    SOCIAL
+========================================================== */
+
+.contform-social h4{
+
+    margin-bottom:18px;
+
+    color:#FFFFFF;
+
+    font-family:"Roboto",sans-serif;
+
+    font-size:18px;
+
+}
+
+.contform-social-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:46px;
+
+    height:46px;
+
+    border-radius:14px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.04);
+
+    color:#FFFFFF;
+
+    text-decoration:none;
+
+}
+
+/* ==========================================================
+                    LABEL
+========================================================== */
+
+.contform-group label{
+
+    margin-bottom:10px;
+
+    color:#CBD5E1;
+
+    font-family:"Roboto",sans-serif;
+
+    font-size:15px;
+
+    font-weight:500;
+
+}
+
+/* ==========================================================
+                    INPUT
+========================================================== */
+
+.contform-group input,
+
+.contform-group select,
+
+.contform-group textarea{
+
+    width:100%;
+
+    padding:16px 18px;
+
+    border-radius:14px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.04);
+
+    color:#FFFFFF;
+
+    font-family:"Inter",sans-serif;
+
+    font-size:15px;
+
+    outline:none;
+
+}
+
+/* ==========================================================
+                    PLACEHOLDER
+========================================================== */
+
+.contform-group input::placeholder,
+
+.contform-group textarea::placeholder{
+
+    color:#64748B;
+
+}
+
+/* ==========================================================
+                    SELECT
+========================================================== */
+
+.contform-group select{
+
+    cursor:pointer;
+
+}
+
+/* ==========================================================
+                    TEXTAREA
+========================================================== */
+
+.contform-group textarea{
+
+    resize:none;
+
+    min-height:180px;
+
+}
+
+/* ==========================================================
+                    BUTTON
+========================================================== */
+
+.contform-button{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:linear-gradient(
+
+        135deg,
+
+        #2563EB,
+
+        #3B82F6
+
+    );
+
+    color:#FFFFFF;
+
+    font-family:"Roboto",sans-serif;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+}
+
+/* ==========================================================
+                    SUCCESS
+========================================================== */
+
+.contform-success{
+
+    margin-bottom:20px;
+
+    padding:16px 18px;
+
+    border-radius:14px;
+
+    border:1px solid rgba(34,197,94,.25);
+
+    background:rgba(34,197,94,.10);
+
+    color:#22C55E;
+
+    font-family:"Inter",sans-serif;
+
+}
+
+/* ==========================================================
+                    ERROR
+========================================================== */
+
+.contform-error{
+
+    margin-bottom:20px;
+
+    padding:16px 18px;
+
+    border-radius:14px;
+
+    border:1px solid rgba(239,68,68,.25);
+
+    background:rgba(239,68,68,.10);
+
+    color:#EF4444;
+
+    font-family:"Inter",sans-serif;
+
+}
+
+/* ==========================================================
+                    GLASS CARD HOVER
+========================================================== */
+
+.contform-card,
+.contform-form-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    transition:
+
+    transform .4s ease,
+
+    border-color .4s ease,
+
+    box-shadow .4s ease,
+
+    background .4s ease;
+
+}
+
+.contform-card::before,
+.contform-form-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:28px;
+
+    padding:1px;
+
+    background:linear-gradient(
+
+        135deg,
+
+        rgba(59,130,246,.9),
+
+        rgba(96,165,250,.25),
+
+        transparent,
+
+        rgba(37,99,235,.7)
+
+    );
+
+    -webkit-mask:
+
+        linear-gradient(#fff 0 0) content-box,
+
+        linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite:xor;
+
+    mask-composite:exclude;
+
+    opacity:0;
+
+    transition:.4s;
+
+    pointer-events:none;
+
+}
+
+.contform-card:hover,
+.contform-form-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(59,130,246,.25);
+
+    background:rgba(255,255,255,.06);
+
+    box-shadow:
+
+        0 30px 80px rgba(37,99,235,.18);
+
+    pointer-events:auto;
+
+}
+
+.contform-card:hover::before,
+.contform-form-card:hover::before{
+
+    opacity:1;
+
+}
+
+/* ==========================================================
+                    CONTACT ITEM
+========================================================== */
+
+.contform-item{
+
+    transition:
+
+        transform .35s ease,
+
+        background .35s ease,
+
+        border-color .35s ease;
+
+}
+
+.contform-item:hover{
+
+    transform:translateX(8px);
+
+    background:rgba(255,255,255,.05);
+
+    border-color:rgba(59,130,246,.25);
+
+}
+
+/* ==========================================================
+                    ICON
+========================================================== */
+
+.contform-icon{
+
+    transition:
+
+        transform .35s ease,
+
+        background .35s ease,
+
+        box-shadow .35s ease;
+
+}
+
+.contform-item:hover .contform-icon{
+
+    transform:rotate(-8deg) scale(1.08);
+
+    background:rgba(37,99,235,.18);
+
+    box-shadow:
+
+        0 0 30px rgba(59,130,246,.35);
+
+}
+
+/* ==========================================================
+                    SOCIAL
+========================================================== */
+
+.contform-social-btn{
+
+    transition:
+
+        transform .35s ease,
+
+        background .35s ease,
+
+        border-color .35s ease,
+
+        box-shadow .35s ease;
+
+}
+
+.contform-social-btn:hover{
+
+    transform:translateY(-5px);
+
+    background:#2563EB;
+
+    border-color:#3B82F6;
+
+    color:#fff;
+
+    box-shadow:
+
+        0 15px 35px rgba(37,99,235,.35);
+
+}
+
+/* ==========================================================
+                    INPUT FOCUS
+========================================================== */
+
+.contform-group input,
+
+.contform-group select,
+
+.contform-group textarea{
+
+    transition:
+
+        border-color .35s ease,
+
+        box-shadow .35s ease,
+
+        background .35s ease;
+
+}
+
+.contform-group input:focus,
+
+.contform-group select:focus,
+
+.contform-group textarea:focus{
+
+    border-color:#3B82F6;
+
+    background:rgba(255,255,255,.06);
+
+    box-shadow:
+
+        0 0 0 4px rgba(59,130,246,.12),
+
+        0 0 30px rgba(59,130,246,.18);
+
+}
+
+/* ==========================================================
+                    BUTTON
+========================================================== */
+
+.contform-button{
+
+    transition:
+
+        transform .35s ease,
+
+        box-shadow .35s ease,
+
+        opacity .35s ease,
+
+        filter .35s ease;
+
+}
+
+.contform-button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+
+        0 20px 45px rgba(37,99,235,.35);
+
+    filter:brightness(1.05);
+
+}
+
+.contform-button:active{
+
+    transform:scale(.98);
+
+}
+
+.contform-button:disabled{
+
+    cursor:not-allowed;
+
+    opacity:.75;
+
+}
+
+/* ==========================================================
+                    BADGE
+========================================================== */
+
+.contform-badge{
+
+    transition:
+
+        transform .35s ease,
+
+        border-color .35s ease;
+
+}
+
+.contform-badge:hover{
+
+    transform:translateY(-3px);
+
+    border-color:#3B82F6;
+
+}
+
+/* ==========================================================
+                    TITLE
+========================================================== */
+
+.contform-title{
+
+    transition:transform .35s ease;
+
+}
+
+.contform-title:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* ==========================================================
+                    SUCCESS
+========================================================== */
+
+.contform-success{
+
+    animation:contformFade .5s ease;
+
+}
+
+/* ==========================================================
+                    ERROR
+========================================================== */
+
+.contform-error{
+
+    animation:contformFade .5s ease;
+
+}
+
+/* ==========================================================
+                    ANIMATIONS
+========================================================== */
+
+@keyframes contformFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(10px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================================
+                    PERFORMANCE
+========================================================== */
+
+.contform-card,
+
+.contform-form-card,
+
+.contform-item,
+
+.contform-button,
+
+.contform-social-btn,
+
+.contform-icon{
+
+    will-change:transform;
+
+    transform:translateZ(0);
+
+    backface-visibility:hidden;
+
+}
+
+/* ==========================================================
+                    LARGE LAPTOP
+========================================================== */
+
+@media (max-width:1200px){
+
+    .contform-container{
+
+        width:92%;
+
+    }
+
+    .contform-wrapper{
+
+        grid-template-columns:340px 1fr;
+
+        gap:35px;
+
+    }
+
+    .contform-title{
+
+        font-size:50px;
+
+    }
+
+}
+
+/* ==========================================================
+                    LAPTOP
+========================================================== */
+
+@media (max-width:1024px){
+
+    .contform-wrapper{
+
+        grid-template-columns:320px 1fr;
+
+        gap:30px;
+
+    }
+
+}
+
+/* ==========================================================
+                    TABLET
+========================================================== */
+
+@media (max-width:992px){
+
+    .contform-wrapper{
+
+        grid-template-columns:1fr;
+
+        gap:40px;
+
+    }
+
+    .contform-header{
+
+        margin-bottom:50px;
+
+    }
+
+    .contform-left{
+
+        order:2;
+
+    }
+
+    .contform-right{
+
+        order:1;
+
+    }
+
+    .contform-card,
+
+    .contform-form-card{
+
+        padding:30px;
+
+    }
+
+}
+
+/* ==========================================================
+                    MOBILE
+========================================================== */
+
+@media (max-width:768px){
+
+    .contform-section{
+
+        padding:70px 0;
+
+    }
+
+    .contform-container{
+
+        width:94%;
+
+    }
+
+    .contform-title{
+
+        font-size:34px;
+
+        line-height:1.2;
+
+    }
+
+    .contform-description{
+
+        font-size:15px;
+
+    }
+
+    .contform-row{
+
+        grid-template-columns:1fr;
+
+        gap:18px;
+
+    }
+
+    .contform-card,
+
+    .contform-form-card{
+
+        padding:24px;
+
+        border-radius:22px;
+
+    }
+
+    .contform-item{
+
+        padding:16px;
+
+    }
+
+    .contform-icon{
+
+        width:46px;
+
+        height:46px;
+
+    }
+
+    .contform-group input,
+
+    .contform-group select,
+
+    .contform-group textarea{
+
+        padding:15px 16px;
+
+        font-size:15px;
+
+    }
+
+    .contform-button{
+
+        width:100%;
+
+    }
+
+}
+
+/* ==========================================================
+                    SMALL MOBILE
+========================================================== */
+
+@media (max-width:480px){
+
+    .contform-section{
+
+        padding:60px 0;
+
+    }
+
+    .contform-container{
+
+        width:95%;
+
+    }
+
+    .contform-badge{
+
+        font-size:11px;
+
+        padding:8px 16px;
+
+    }
+
+    .contform-title{
+
+        font-size:28px;
+
+    }
+
+    .contform-description{
+
+        font-size:14px;
+
+        line-height:1.8;
+
+    }
+
+    .contform-card,
+
+    .contform-form-card{
+
+        padding:20px;
+
+    }
+
+    .contform-card h3,
+
+    .contform-form-card h3{
+
+        font-size:22px;
+
+    }
+
+    .contform-card p,
+
+    .contform-form-card p{
+
+        font-size:14px;
+
+    }
+
+    .contform-item{
+
+        gap:14px;
+
+        padding:14px;
+
+    }
+
+    .contform-icon{
+
+        width:42px;
+
+        height:42px;
+
+        border-radius:12px;
+
+    }
+
+    .contform-content h4{
+
+        font-size:15px;
+
+    }
+
+    .contform-content span{
+
+        font-size:13px;
+
+    }
+
+    .contform-social-wrapper{
+
+        justify-content:center;
+
+    }
+
+    .contform-social-btn{
+
+        width:42px;
+
+        height:42px;
+
+    }
+
+    .contform-group label{
+
+        font-size:14px;
+
+    }
+
+    .contform-group input,
+
+    .contform-group select,
+
+    .contform-group textarea{
+
+        font-size:14px;
+
+        padding:14px;
+
+    }
+
+    .contform-button{
+
+        padding:16px;
+
+        font-size:15px;
+
+    }
+
+}
+
+/* ==========================================================
+                    ACCESSIBILITY
+========================================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .contform-card,
+
+    .contform-form-card,
+
+    .contform-item,
+
+    .contform-button,
+
+    .contform-social-btn,
+
+    .contform-icon{
+
+        transition:none !important;
+
+    }
+
+}
+
+/* ==========================================================
+                    PERFORMANCE
+========================================================== */
+
+.contform-grid,
+
+.contform-glow{
+
+    pointer-events:none;
+
+}
+
+.contform-button,
+
+.contform-item,
+
+.contform-card,
+
+.contform-form-card,
+
+.contform-social-btn{
+
+    transform:translateZ(0);
+
+    backface-visibility:hidden;
+
+}

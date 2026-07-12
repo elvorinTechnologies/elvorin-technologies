@@ -1,0 +1,1631 @@
+/* ==========================================================
+                    CONTACT HERO SECTION
+========================================================== */
+
+.contpage-section{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:60px 0;
+
+    background:#050816;
+
+}
+
+/* ==========================================================
+                    GRID BACKGROUND
+========================================================== */
+
+.contpage-grid{
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:1;
+
+    opacity:.35;
+
+    background-image:
+
+        linear-gradient(
+
+            rgba(255,255,255,.05) 1px,
+
+            transparent 1px
+
+        ),
+
+        linear-gradient(
+
+            90deg,
+
+            rgba(255,255,255,.05) 1px,
+
+            transparent 1px
+
+        );
+
+    background-size:70px 70px;
+
+}
+
+/* ==========================================================
+                    BLUE GLOW
+========================================================== */
+
+.contpage-glow{
+
+    position:absolute;
+
+    top:-250px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:900px;
+
+    height:900px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+
+            circle,
+
+            rgba(59,130,246,.20),
+
+            rgba(37,99,235,.08),
+
+            transparent 72%
+
+        );
+
+    filter:blur(120px);
+
+    z-index:1;
+
+}
+
+/* ==========================================================
+                    CONTAINER
+========================================================== */
+
+.contpage-container{
+
+    position:relative;
+
+    z-index:5;
+
+    width:90%;
+
+    max-width:1320px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    align-items:center;
+
+    gap:80px;
+
+    min-height:78vh;
+
+}
+
+/* ==========================================================
+                    LEFT
+========================================================== */
+
+.contpage-left{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+}
+
+/* ==========================================================
+                    RIGHT
+========================================================== */
+
+.contpage-right{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+
+}
+
+/* ==========================================================
+                    CONTACT TAGS
+========================================================== */
+
+.contpage-tags{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+    width:100%;
+
+    margin-top:45px;
+
+}
+
+/* ==========================================================
+                    ORB
+========================================================== */
+
+.contpage-orb{
+
+    position:relative;
+
+    width:360px;
+
+    height:360px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/* ==========================================================
+                    RINGS
+========================================================== */
+
+.contpage-ring{
+
+    position:absolute;
+
+    border-radius:50%;
+
+}
+
+.ring-one{
+
+    width:220px;
+
+    height:220px;
+
+}
+
+.ring-two{
+
+    width:290px;
+
+    height:290px;
+
+}
+
+.ring-three{
+
+    width:360px;
+
+    height:360px;
+
+}
+
+/* ==========================================================
+                    CORE
+========================================================== */
+
+.contpage-core{
+
+    position:relative;
+
+    width:130px;
+
+    height:130px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    z-index:5;
+
+}
+/* ==========================================================
+                    GLASS BADGE
+========================================================== */
+
+.contpage-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:10px 18px;
+
+    margin-bottom:28px;
+
+    border-radius:999px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    color:#60A5FA;
+
+    font-family:"Inter",sans-serif;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    letter-spacing:1.5px;
+
+    text-transform:uppercase;
+
+}
+
+/* ==========================================================
+                    TITLE
+========================================================== */
+
+.contpage-title{
+
+    font-family:"Roboto",sans-serif;
+
+    font-size:clamp(48px,6vw,72px);
+
+    font-weight:700;
+
+    line-height:1.08;
+
+    color:#FFFFFF;
+
+    margin-bottom:24px;
+
+}
+
+.contpage-title span{
+
+    display:block;
+
+    margin-top:10px;
+
+    background:linear-gradient(
+
+        90deg,
+
+        #2563EB,
+
+        #3B82F6,
+
+        #60A5FA
+
+    );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    background-clip:text;
+
+}
+
+/* ==========================================================
+                    DESCRIPTION
+========================================================== */
+
+.contpage-description{
+
+    max-width:620px;
+
+    font-family:"Inter",sans-serif;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#94A3B8;
+
+}
+
+/* ==========================================================
+                    CONTACT TAG
+========================================================== */
+
+.contpage-tag{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:16px;
+
+    padding:22px;
+
+    border-radius:22px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.04);
+
+    backdrop-filter:blur(22px);
+
+    -webkit-backdrop-filter:blur(22px);
+
+}
+
+.contpage-icon{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:56px;
+
+    height:56px;
+
+    border-radius:18px;
+
+    background:rgba(59,130,246,.12);
+
+    border:1px solid rgba(59,130,246,.25);
+
+    color:#60A5FA;
+
+    flex-shrink:0;
+
+}
+
+.contpage-tag-content{
+
+    flex:1;
+
+}
+
+.contpage-tag-content h4{
+
+    font-family:"Roboto",sans-serif;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:#FFFFFF;
+
+    margin-bottom:8px;
+
+}
+
+.contpage-tag-content p{
+
+    font-family:"Inter",sans-serif;
+
+    font-size:15px;
+
+    line-height:1.7;
+
+    color:#94A3B8;
+
+}
+
+/* ==========================================================
+                    AI ORB
+========================================================== */
+
+.contpage-core{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(59,130,246,.25);
+
+    backdrop-filter:blur(24px);
+
+    -webkit-backdrop-filter:blur(24px);
+
+    color:#60A5FA;
+
+    box-shadow:
+
+        0 0 45px rgba(59,130,246,.18);
+
+}
+
+/* ==========================================================
+                    ORB ICON
+========================================================== */
+
+.contpage-core svg{
+
+    width:46px;
+
+    height:46px;
+
+}
+
+/* ==========================================================
+                    RING ONE
+========================================================== */
+
+.ring-one{
+
+    border:2px solid rgba(59,130,246,.35);
+
+}
+
+/* ==========================================================
+                    RING TWO
+========================================================== */
+
+.ring-two{
+
+    border:2px dashed rgba(96,165,250,.25);
+
+}
+
+/* ==========================================================
+                    RING THREE
+========================================================== */
+
+.ring-three{
+
+    border:1px solid rgba(59,130,246,.15);
+
+}
+
+/* ==========================================================
+                    ORB FLOAT
+========================================================== */
+
+.contpage-orb{
+
+    animation:contpageFloat 6s ease-in-out infinite;
+
+}
+
+/* ==========================================================
+                    TRIPLE RING ROTATION
+========================================================== */
+
+.ring-one{
+
+    animation:contpageRotate 18s linear infinite;
+
+}
+
+.ring-two{
+
+    animation:contpageRotateReverse 14s linear infinite;
+
+}
+
+.ring-three{
+
+    animation:contpageRotateSlow 26s linear infinite;
+
+}
+
+/* ==========================================================
+                    CORE
+========================================================== */
+
+.contpage-core{
+
+    transition:
+
+    transform .4s ease,
+
+    box-shadow .4s ease,
+
+    background .4s ease;
+
+}
+
+.contpage-orb:hover .contpage-core{
+
+    transform:scale(1.08);
+
+    box-shadow:
+
+    0 0 70px rgba(59,130,246,.45);
+
+}
+
+/* ==========================================================
+                    BLUE PULSE
+========================================================== */
+
+.contpage-core::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-18px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(59,130,246,.20);
+
+    animation:contpagePulse 3s ease-in-out infinite;
+
+}
+
+/* ==========================================================
+                    CONTACT TAG
+========================================================== */
+
+.contpage-tag{
+
+    position:relative;
+
+    overflow:hidden;
+
+    transition:
+
+    transform .4s ease,
+
+    box-shadow .4s ease,
+
+    border-color .4s ease,
+
+    background .4s ease;
+
+}
+
+.contpage-tag::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:22px;
+
+    padding:1px;
+
+    background:linear-gradient(
+
+        135deg,
+
+        rgba(59,130,246,.95),
+
+        rgba(96,165,250,.25),
+
+        transparent,
+
+        rgba(37,99,235,.60)
+
+    );
+
+    -webkit-mask:
+
+    linear-gradient(#fff 0 0) content-box,
+
+    linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite:xor;
+
+    mask-composite:exclude;
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+.contpage-tag:hover{
+
+    transform:
+
+    translateY(-8px)
+
+    scale(1.03);
+
+    background:rgba(255,255,255,.06);
+
+    border-color:rgba(59,130,246,.35);
+
+    box-shadow:
+
+    0 25px 60px rgba(37,99,235,.18);
+
+}
+
+.contpage-tag:hover::before{
+
+    opacity:1;
+
+}
+
+/* ==========================================================
+                    ICON
+========================================================== */
+
+.contpage-icon{
+
+    transition:
+
+    transform .35s ease,
+
+    background .35s ease,
+
+    box-shadow .35s ease;
+
+}
+
+.contpage-tag:hover .contpage-icon{
+
+    transform:
+
+    rotate(-10deg)
+
+    scale(1.08);
+
+    background:rgba(59,130,246,.18);
+
+    box-shadow:
+
+    0 0 35px rgba(59,130,246,.35);
+
+}
+
+/* ==========================================================
+                    TAG CONTENT
+========================================================== */
+
+.contpage-tag-content h4,
+
+.contpage-tag-content p{
+
+    transition:.35s;
+
+}
+
+.contpage-tag:hover h4{
+
+    color:#60A5FA;
+
+}
+
+.contpage-tag:hover p{
+
+    color:#CBD5E1;
+
+}
+
+/* ==========================================================
+                    BADGE
+========================================================== */
+
+.contpage-badge{
+
+    transition:.35s;
+
+}
+
+.contpage-badge:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* ==========================================================
+                    TITLE
+========================================================== */
+
+.contpage-title{
+
+    transition:.35s;
+
+}
+
+.contpage-title:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* ==========================================================
+                    ANIMATIONS
+========================================================== */
+
+@keyframes contpageFloat{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes contpageRotate{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+@keyframes contpageRotateReverse{
+
+    from{
+
+        transform:rotate(360deg);
+
+    }
+
+    to{
+
+        transform:rotate(0deg);
+
+    }
+
+}
+
+@keyframes contpageRotateSlow{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+@keyframes contpagePulse{
+
+    0%{
+
+        transform:scale(1);
+
+        opacity:.2;
+
+    }
+
+    50%{
+
+        transform:scale(1.12);
+
+        opacity:.7;
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+        opacity:.2;
+
+    }
+
+}
+
+/* ==========================================================
+                    LARGE LAPTOP
+========================================================== */
+
+@media (max-width:1200px){
+
+    .contpage-container{
+
+        width:92%;
+
+        gap:60px;
+
+    }
+
+    .contpage-title{
+
+        font-size:58px;
+
+    }
+
+    .contpage-orb{
+
+        width:320px;
+
+        height:320px;
+
+    }
+
+    .ring-one{
+
+        width:200px;
+
+        height:200px;
+
+    }
+
+    .ring-two{
+
+        width:260px;
+
+        height:260px;
+
+    }
+
+    .ring-three{
+
+        width:320px;
+
+        height:320px;
+
+    }
+
+}
+
+/* ==========================================================
+                    TABLET
+========================================================== */
+
+@media (max-width:992px){
+
+    .contpage-container{
+
+        grid-template-columns:1fr;
+
+        gap:70px;
+
+        text-align:center;
+
+    }
+
+    .contpage-left{
+
+        align-items:center;
+
+    }
+
+    .contpage-description{
+
+        max-width:700px;
+
+    }
+
+    .contpage-tags{
+
+        grid-template-columns:repeat(2,1fr);
+
+        width:100%;
+
+    }
+
+    .contpage-right{
+
+        justify-content:center;
+
+    }
+
+    .contpage-orb{
+
+        width:270px;
+
+        height:270px;
+
+    }
+
+    .ring-one{
+
+        width:170px;
+
+        height:170px;
+
+    }
+
+    .ring-two{
+
+        width:220px;
+
+        height:220px;
+
+    }
+
+    .ring-three{
+
+        width:270px;
+
+        height:270px;
+
+    }
+
+    .contpage-core{
+
+        width:110px;
+
+        height:110px;
+
+    }
+
+}
+
+/* ==========================================================
+                    MOBILE
+========================================================== */
+
+@media (max-width:768px){
+
+    .contpage-section{
+
+        padding:60px 0;
+
+    }
+
+    .contpage-container{
+
+        width:94%;
+
+        gap:50px;
+
+    }
+
+    .contpage-left{
+
+        align-items:flex-start;
+
+        text-align:left;
+
+    }
+
+    .contpage-title{
+
+        font-size:38px;
+
+    }
+
+    .contpage-description{
+
+        font-size:16px;
+
+        line-height:1.8;
+
+    }
+
+    .contpage-tags{
+
+        grid-template-columns:1fr;
+
+        gap:18px;
+
+        margin-top:35px;
+
+    }
+
+    .contpage-tag{
+
+        width:100%;
+
+    }
+
+    .contpage-orb{
+
+        width:220px;
+
+        height:220px;
+
+    }
+
+    .ring-one{
+
+        width:140px;
+
+        height:140px;
+
+    }
+
+    .ring-two{
+
+        width:180px;
+
+        height:180px;
+
+    }
+
+    .ring-three{
+
+        width:220px;
+
+        height:220px;
+
+    }
+
+    .contpage-core{
+
+        width:95px;
+
+        height:95px;
+
+    }
+
+    .contpage-core svg{
+
+        width:34px;
+
+        height:34px;
+
+    }
+
+}
+
+/* ==========================================================
+                    SMALL MOBILE
+========================================================== */
+
+@media (max-width:480px){
+
+    .contpage-title{
+
+        font-size:30px;
+
+    }
+
+    .contpage-description{
+
+        font-size:15px;
+
+    }
+
+    .contpage-badge{
+
+        font-size:12px;
+
+        padding:8px 14px;
+
+    }
+
+    .contpage-tag{
+
+        padding:18px;
+
+        border-radius:18px;
+
+    }
+
+    .contpage-icon{
+
+        width:48px;
+
+        height:48px;
+
+        border-radius:15px;
+
+    }
+
+    .contpage-icon svg{
+
+        width:18px;
+
+        height:18px;
+
+    }
+
+    .contpage-tag-content h4{
+
+        font-size:16px;
+
+    }
+
+    .contpage-tag-content p{
+
+        font-size:14px;
+
+    }
+
+    .contpage-orb{
+
+        width:180px;
+
+        height:180px;
+
+    }
+
+    .ring-one{
+
+        width:110px;
+
+        height:110px;
+
+    }
+
+    .ring-two{
+
+        width:145px;
+
+        height:145px;
+
+    }
+
+    .ring-three{
+
+        width:180px;
+
+        height:180px;
+
+    }
+
+    .contpage-core{
+
+        width:80px;
+
+        height:80px;
+
+    }
+
+    .contpage-core svg{
+
+        width:28px;
+
+        height:28px;
+
+    }
+
+}
+
+/* ==========================================================
+                    PERFORMANCE
+========================================================== */
+
+.contpage-orb,
+
+.contpage-core,
+
+.contpage-tag,
+
+.contpage-icon{
+
+    will-change:transform;
+
+    transform:translateZ(0);
+
+    backface-visibility:hidden;
+
+}
+
+.contpage-grid,
+
+.contpage-glow{
+
+    pointer-events:none;
+
+}
+
+.contpage-tag img{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+/* ==========================================================
+                    ACCESSIBILITY
+========================================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .contpage-orb,
+
+    .ring-one,
+
+    .ring-two,
+
+    .ring-three,
+
+    .contpage-core::before{
+
+        animation:none !important;
+
+    }
+
+    .contpage-tag,
+
+    .contpage-icon,
+
+    .contpage-core{
+
+        transition:none !important;
+
+    }
+
+}
+/* ==========================================================
+                    IMAGE WRAPPER
+========================================================== */
+
+.contpage-image-wrapper{
+
+    position:relative;
+
+    width:100%;
+
+    max-width:520px;
+
+    margin:auto;
+
+}
+
+/* ==========================================================
+                    IMAGE
+========================================================== */
+
+.contpage-image{
+
+    display:block;
+
+    width:100%;
+
+    border-radius:28px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.04);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    box-shadow:
+
+    0 30px 80px rgba(37,99,235,.18);
+
+    transition:
+
+    transform .45s ease,
+
+    box-shadow .45s ease;
+
+}
+
+.contpage-image:hover{
+
+    transform:scale(1.02);
+
+    box-shadow:
+
+    0 40px 100px rgba(37,99,235,.28);
+
+}
+
+/* ==========================================================
+                    BLUE GLOW
+========================================================== */
+
+.contpage-image-wrapper::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-60px;
+
+    z-index:-1;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(
+
+        circle,
+
+        rgba(59,130,246,.28),
+
+        rgba(37,99,235,.08),
+
+        transparent 70%
+
+    );
+
+    filter:blur(80px);
+
+}
+
+/* ==========================================================
+                    FLOATING CARD
+========================================================== */
+
+.contpage-floating-card{
+
+    position:absolute;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:14px 22px;
+
+    border-radius:16px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    color:#FFFFFF;
+
+    font-family:"Roboto",sans-serif;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,.25);
+
+}
+
+/* ==========================================================
+                    CARD POSITIONS
+========================================================== */
+
+.card-one{
+
+    top:-20px;
+
+    left:-35px;
+
+}
+
+.card-two{
+
+    top:60px;
+
+    right:-35px;
+
+}
+
+.card-three{
+
+    bottom:70px;
+
+    left:-35px;
+
+}
+
+.card-four{
+
+    bottom:-20px;
+
+    right:-35px;
+
+}
+
+/* ==========================================================
+                    CARD HOVER
+========================================================== */
+
+.contpage-floating-card{
+
+    transition:
+
+    transform .35s ease,
+
+    box-shadow .35s ease,
+
+    border-color .35s ease;
+
+}
+
+.contpage-floating-card:hover{
+
+    transform:
+
+    translateY(-8px)
+
+    scale(1.05);
+
+    border-color:rgba(59,130,246,.35);
+
+    box-shadow:
+
+    0 25px 55px rgba(37,99,235,.25);
+
+}
+
+/* ==========================================================
+                    FLOATING ANIMATION
+========================================================== */
+
+.card-one{
+
+    animation:floatOne 5s ease-in-out infinite;
+
+}
+
+.card-two{
+
+    animation:floatTwo 6s ease-in-out infinite;
+
+}
+
+.card-three{
+
+    animation:floatThree 5.5s ease-in-out infinite;
+
+}
+
+.card-four{
+
+    animation:floatFour 6.5s ease-in-out infinite;
+
+}
+
+@keyframes floatOne{
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+}
+
+@keyframes floatTwo{
+
+    50%{
+
+        transform:translateY(10px);
+
+    }
+
+}
+
+@keyframes floatThree{
+
+    50%{
+
+        transform:translateY(-8px);
+
+    }
+
+}
+
+@keyframes floatFour{
+
+    50%{
+
+        transform:translateY(8px);
+
+    }
+
+}
+
+/* ==========================================================
+                    RESPONSIVE
+========================================================== */
+
+@media(max-width:992px){
+
+    .contpage-image-wrapper{
+
+        max-width:430px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .contpage-image-wrapper{
+
+        max-width:430px;
+
+    }
+
+    .contpage-floating-card{
+
+        font-size:13px;
+
+        margin-top:20px;
+        padding:10px 16px;
+
+    }
+
+    .card-one{
+
+        left:-15px;
+
+    }
+
+    .card-two{
+
+        right:-15px;
+
+    }
+
+    .card-three{
+
+        left:-15px;
+
+    }
+
+    .card-four{
+
+        right:-15px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .contpage-image-wrapper{
+
+        max-width:380px;
+
+    }
+
+    .contpage-floating-card{
+
+        position:static;
+
+        margin-top:20px;
+
+        width:100%;
+        
+
+    }
+
+}

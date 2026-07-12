@@ -1,5 +1,11 @@
+import ServiceHero from "./Service-page-components/ServiceHero";
+
 function Services() {
-  return <h1>Services Page</h1>;
+   return (
+    <>
+      <ServiceHero />
+    </>
+  );
 }
 
 export default Services;
