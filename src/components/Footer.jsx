@@ -36,24 +36,6 @@ const companyLinks = [
     },
 
     {
-        id:3,
-        title:"Industries",
-        link:"#industries",
-    },
-
-    {
-        id:4,
-        title:"Our Process",
-        link:"#process",
-    },
-
-    {
-        id:5,
-        title:"Portfolio",
-        link:"#portfolio",
-    },
-
-    {
         id:6,
         title:"Contact",
         link:"#contact",
@@ -126,12 +108,6 @@ const quickLinks = [
     {
         id:3,
         title:"FAQs",
-        link:"#",
-    },
-
-    {
-        id:4,
-        title:"Careers",
         link:"#",
     },
 
