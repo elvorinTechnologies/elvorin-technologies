@@ -12,6 +12,14 @@ import ContactSection from "../components/ContactSection";
 function Home() {
   return (
     <>
+
+      <SEO
+        title="AI, Web Development & Digital Marketing | Elvorin Technologies"
+        description="Elvorin Technologies delivers AI Automation, Web Development, SEO, Branding, Mobile Apps and Digital Marketing services for startups and businesses."
+        keywords="AI Automation, Website Development, SEO Company, Digital Marketing, Branding"
+        canonical="https://elvorintech.com/"
+      />
+
       <Hero />
       <TrustedSection />
       <AboutSection />

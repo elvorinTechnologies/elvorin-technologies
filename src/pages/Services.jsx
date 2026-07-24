@@ -2,8 +2,15 @@ import ServiceHero from "./Service-page-components/ServiceHero";
 import ServicesGrid from "./Service-page-components/ServicesGrid";
 
 function Services() {
-   return (
+  return (
     <>
+
+      <SEO
+        title="Web Development, AI Automation & SEO Services | Elvorin Technologies"
+        description="Explore our professional AI Automation, Website Development, SEO, UI/UX, Branding and Digital Marketing services."
+        keywords="Web Development Services, AI Automation Services, SEO Services"
+        canonical="https://elvorintech.com/services"
+      />
       <ServiceHero />
       <ServicesGrid />
     </>
