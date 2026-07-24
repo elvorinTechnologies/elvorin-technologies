@@ -1,6 +1,8 @@
 import ServiceHero from "./Service-page-components/ServiceHero";
 import ServicesGrid from "./Service-page-components/ServicesGrid";
 
+import SEO from "../components/SEO";
+
 function Services() {
   return (
     <>

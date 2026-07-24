@@ -1,6 +1,8 @@
 import ContactHero from "./Contact-page-components/ContactHero";
 import ContactForm from "./Contact-page-components/ContactForm"
 
+import SEO from "../components/SEO";
+
 function Contact() {
     return (
         <>

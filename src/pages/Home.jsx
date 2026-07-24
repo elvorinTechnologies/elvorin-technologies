@@ -8,6 +8,8 @@ import ProcessSection from "../components/ProcessSection";
 import CTASection from "../components/CTASection";
 import ContactSection from "../components/ContactSection";
 
+import SEO from "../components/SEO";
+
 
 function Home() {
   return (
