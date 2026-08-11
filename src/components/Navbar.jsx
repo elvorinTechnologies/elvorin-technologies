@@ -239,9 +239,9 @@ function Navbar() {
                     </NavLink>
 
                     <NavLink
-                        // to="/contact"
-                        // className="mobile-btn"
-                        // onClick={closeMenu}
+                        
+                        className="mobile-btn"
+                        onClick={closeMenu}
                     >
                         Let's Talk
                     </NavLink>
