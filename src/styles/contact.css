@@ -1282,9 +1282,17 @@
 
 @media (max-width: 480px) {
   .elv-contact-section {
-    padding-top: 40px;
+    padding-top: 100px;
     padding-bottom: 40px;
   }
+}
+
+@media (max-width: 480px) {
+    .contpage-badge {
+        font-size: 12px;
+        padding: 8px 14px;
+        margin-top: 40px;
+    }
 }
 
 @media(max-width:480px){
