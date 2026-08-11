@@ -152,7 +152,7 @@ transform:translate(0,0);
 display:flex;
 
 flex-direction:column;
-margin-top: 50px;
+margin-top: 120px;
 
 }
 
@@ -965,7 +965,6 @@ right:20px;
 left:20px;
 
 }
-
 }
 
 @media(max-width:768px){
@@ -1059,6 +1058,10 @@ display:none;
 padding-top:70px;
 padding-bottom: 40px;
 
+}
+
+.hero-left{
+    margin-top: 60px;
 }
 
 .hero-left h1{
