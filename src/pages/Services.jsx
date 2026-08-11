@@ -8,9 +8,9 @@ function Services() {
     <>
 
       <SEO
-        title="Web Development, AI Automation & SEO Services | Elvorin Technologies"
-        description="Explore our professional AI Automation, Website Development, SEO, UI/UX, Branding and Digital Marketing services."
-        keywords="Web Development Services, AI Automation Services, SEO Services"
+        title="Services | Web Development, AI & Digital Solutions | Elvorin Technologies"
+        description="Explore Elvorin Technologies services including web development,WordPress, AI automation, mobile apps, SEO, digital marketing and more.."
+        keywords="WordPress, AI automation, mobile apps, SEO, digital marketing and more."
         canonical="https://elvorintech.com/services"
       />
       <ServiceHero />
