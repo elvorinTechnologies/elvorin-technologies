@@ -14,6 +14,8 @@
     if (el.closest('[data-no-redirect]')) return false;
     // don't interfere with forms
     if (el.closest('form')) return false;
+    // don't redirect navigation/menu controls
+    if (el.closest('header, nav, .navbar, .mobile-menu, .overlay, .nav-container')) return false;
     // don't intercept if anchor is external or already points elsewhere
     if (el.tagName === 'A') {
       if (isExternalAnchor(el)) return false;
@@ -22,6 +24,7 @@
     }
     // common class-name cues
     const cls = (el.className && typeof el.className === 'string') ? el.className : '';
+    if (/(menu-toggle|close-btn)/i.test(cls)) return false;
     if (/(\bbtn\b|\bbutton\b|\bcta\b|\bcontact\b|\bsend\b|\bsubmit\b)/i.test(cls)) return true;
     if (el.tagName === 'BUTTON') return true;
     if (el.getAttribute && el.getAttribute('role') === 'button') return true;

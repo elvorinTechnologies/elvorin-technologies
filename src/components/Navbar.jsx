@@ -144,6 +144,7 @@ function Navbar() {
 
                 <button
                     className="menu-toggle"
+                    data-no-redirect
                     onClick={() =>
                         setMobileMenu(!mobileMenu)
                     }
@@ -194,6 +195,7 @@ function Navbar() {
 
                         <button
                             className="close-btn"
+                            data-no-redirect
                             onClick={closeMenu}
                         >
 
@@ -239,7 +241,7 @@ function Navbar() {
                     </NavLink>
 
                     <NavLink
-                        
+                        to="/contact"
                         className="mobile-btn"
                         onClick={closeMenu}
                     >
