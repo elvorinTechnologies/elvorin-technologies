@@ -903,7 +903,7 @@ transform:translateY(0);
       RESPONSIVE
 =========================== */
 
-@media(max-width:1200px){
+@media(max-width:1024px){
 
 .hero-container{
 
