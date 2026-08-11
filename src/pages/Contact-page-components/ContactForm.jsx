@@ -154,7 +154,7 @@ const socialLinks=[
 
         icon:<FaLinkedinIn size={18}/>,
 
-        url:"https://linkedin.com"
+        url:"https://www.linkedin.com/company/elvorintechnologies"
 
     },
 
@@ -164,7 +164,7 @@ const socialLinks=[
 
         icon:<FaInstagram size={18}/>,
 
-        url:"https://instagram.com"
+        url:"https://www.instagram.com/elvorintechnologies/"
 
     },
 
@@ -174,7 +174,7 @@ const socialLinks=[
 
         icon:<FaFacebookF size={18}/>,
 
-        url:"https://facebook.com"
+        url:"htthttps://www.facebook.com/people/Elvorin-Technologies/61591096885369/"
 
     }
 
